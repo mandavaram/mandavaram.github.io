@@ -15,15 +15,8 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 10+ years of software life cycle experience in developing Web, Windows, and Object-Oriented applications using Microsoft Technologies on the Microsoft Windows   platform.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
   
 Skills
 ======

@@ -11,21 +11,26 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, JNTU University, 2003
+* B.S. in Computer Science, JNTU University, INDIA
+* Microsoft Certified Application Developer (MCAD) in VB.NET.    (MCP ID: 3633414)
 
 Work experience
 ======
 * 10+ years of software life cycle experience in developing Web, Windows, and Object-Oriented applications using Microsoft Technologies on the Microsoft Windows   platform.
 
   
-Skills
+Technical Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Microsoft Technologies
+  * ASP.NET, C#.NET, VB.NET, ADO.NET, VB6
+  * Win/ Web Forms, Web/ Windows Services, MVC, VSTO, VS.NET 2012/2017/2019
+* Database
+  * SQL Server, SSIS, SSRS, Oracle
+* Markup Languages
+  * HTML, DHTML, XAML, XML, CSS, XSL
+* Scripting Languages
+  * VBScript, Java Script, VB, ASP 
+  * Python, R
 
 Publications
 ======

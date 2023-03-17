@@ -1,6 +1,6 @@
 ---
 title: "US House hold income plot"
-excerpt: "Lab4: US House hold income plot image<br/><img src='/images/US_Household_Income_plot.png'>"
+excerpt: "Lab4 Assignment work: US House hold income plot image<br/><img src='/images/US_Household_Income_plot.png'>"
 collection: portfolio
 ---
 

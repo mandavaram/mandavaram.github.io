@@ -1,6 +1,6 @@
 ---
 title: "Baltimore city housing unit vacancy rate map"
-excerpt: "Lab5 Assignment work: Baltimore city housing unit vacancy rate map<br/><img src='/images/baltimore_house_unit_vacancy_rate.png'>"
+excerpt: "Lab 6 Assignment work: <br/><img src='/images/baltimore_house_unit_vacancy_rate.png'>"
 collection: portfolio
 ---
 

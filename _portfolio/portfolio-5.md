@@ -1,6 +1,6 @@
 ---
 title: "Baltimore city household income map"
-excerpt: "Lab5 Assignment work: Baltimore city household income map<br/><img src='/images/baltimore_household_income.png'>"
+excerpt: "Lab 6 Assignment work: <br/><img src='/images/baltimore_household_income.png'>"
 collection: portfolio
 ---
 

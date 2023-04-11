@@ -40,7 +40,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email                : "rmandav1@umbc.edu"
   generatedFields:
     date:
       type               : "date"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Ram Mandava"
   avatar           : "profile.png"
-  bio              : "Currently UMBC Student"
-  location         : "Location"
+  bio              : "UMBC Student, Master of Professional Studies (M.P.S.) in GIS at UMBC <a href='https://ges.umbc.edu/'>Geography + Environmental Systems</a>."
+  location         : "Baltimore, MD"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "mandavaram"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "ram-mandava-9a421012/"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

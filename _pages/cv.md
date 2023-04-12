@@ -32,6 +32,7 @@ Technical Skills
   * VBScript, Java Script, VB, ASP 
   * Python, R
 
+<!--
 Publications
 ======
   <ul>{% for post in site.publications %}
@@ -50,7 +51,7 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-<!--
-#Service and leadership
-#======
-#* Currently signed in to 43 different slack teams -->
+
+Service and leadership
+======
+* Currently signed in to 43 different slack teams -->

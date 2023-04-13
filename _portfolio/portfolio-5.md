@@ -1,5 +1,5 @@
 ---
-title: "Baltimore city household income map"
+title: "Baltimore City household income map"
 excerpt: "Lab 6 Assignment work: <br/><img src='/images/baltimore_household_income.png'>"
 collection: portfolio
 ---
@@ -8,4 +8,4 @@ This is an item in your portfolio. It can be have images or nice text. If you na
 
 This is an image
 
-![Baltimore city household income map](/images/baltimore_household_income.png "Baltimore city household income map")
+![Baltimore City household income map](/images/baltimore_household_income.png "Baltimore City household income map")

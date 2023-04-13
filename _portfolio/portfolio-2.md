@@ -1,5 +1,5 @@
 ---
-title: "Howard county percent Asian population map"
+title: "Howard County percent Asian population map"
 excerpt: "Lab 4 Assignment work: <br/><img src='/images/Howard_County_Asian_map.png'>"
 collection: portfolio
 ---
@@ -8,4 +8,4 @@ This is an item in your portfolio. It can be have images or nice text. If you na
 
 This is an image.
 
-![Howard county percent Asian population map](/images/Howard_County_Asian_map.png "Howard county percent Asian population map")
+![Howard County percent Asian population map](/images/Howard_County_Asian_map.png "Howard County percent Asian population map")

@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ram Mandava"
+title                    : "RAM MANDAVA's portfolio"
 title_separator          : "-"
-name                     : &name "RAM MANDAVA's portfolio"
+name                     : &name "Ram Mandava"
 description              : &description "personal description"
 url                      : https://mandavaram.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

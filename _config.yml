@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ram Mandava's portfoilio (demo)"
+title                    : "Ram Mandava's portfoilio"
 title_separator          : "-"
 name                     : &name "Ram Mandava"
 description              : &description "personal description"

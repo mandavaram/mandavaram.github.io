@@ -1,4 +1,4 @@
-# Hi, I'm Ram Mandava <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+Hi, I'm Ram Mandava <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 UMBC email address: rmandav1@umbc.edu
 <br>

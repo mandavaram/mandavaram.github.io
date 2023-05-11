@@ -13,9 +13,8 @@ Agricultural - (https://opendata.maryland.gov/browse?category=agriculture)<br>
 
 -----------------
 
-#Sample maps generated using R environment
--------------------------------------------
-
+# Sample maps generated using R environment
+-----------------
 ![Howard County % Asian population map](/images/Howard_County_Asian_map.png "Howard County % Asian population map")
 ---
 ![Baltimore City household income map](/images/baltimore_household_income.png "Baltimore City household income map")

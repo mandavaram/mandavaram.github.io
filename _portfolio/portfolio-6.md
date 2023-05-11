@@ -1,6 +1,6 @@
 ---
 title: "Italian restaurants near Baltimore map"
-excerpt: "Lab 10 Assignment work: <br/><a href="[Italian restaurants near Baltimore map](https://italianrestaurant.s3.amazonaws.com/qgis2web_2023_05_10-16_32_12_096332/index.html#10/39.4008/-76.4407)">Italian restaurants near Baltimore map</a>
+excerpt: "Lab 10 Assignment work: <br/><a href="https://italianrestaurant.s3.amazonaws.com/qgis2web_2023_05_10-16_32_12_096332/index.html#10/39.4008/-76.4407">Italian restaurants near Baltimore map</a>
 collection: portfolio
 ---
 

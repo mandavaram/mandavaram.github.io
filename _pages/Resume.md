@@ -35,6 +35,6 @@ Technical Skills
 * GIS Technologies
   * Esri, Arcgis Server, Arcgis Desktop, Arcgis Online, Arcgis Pro, QGIS
 * Source code management
-  * VSS, TFS, Git, Azure DevOps
+  * VSS, TFS, GitHub, Azure DevOps
 * Reporting Tools
   * SSRS, Power BI, Crystal reports

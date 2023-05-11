@@ -38,6 +38,7 @@ Technical Skills
   * VSS, TFS, Git, Azure DevOps
 * Reporting Tools
   * SSRS, Power BI, Crystal reports
+
 <!--
 Publications
 ======

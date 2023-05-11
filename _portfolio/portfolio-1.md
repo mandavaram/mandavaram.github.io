@@ -1,15 +1,15 @@
 ---
-title: "Web Map for Italian restaurants near Baltimore"
-excerpt: "Created Web Map with QGIS2Web (QGIS3) for finding Italian restaurants near Baltimore <br/>
+title: "Web Map for Italian restaurants near Baltimore area"
+excerpt: "Created Web Map with QGIS2Web (QGIS3) for finding Italian restaurants near Baltimore area<br/>
 <br/>
 <img src='/images/Italian_Restaurants_near_Baltimore.png'>"
 collection: portfolio
 ---
 
-This is an URL:
-[Italian restaurants near Baltimore map URL](https://italianrestaurant.s3.amazonaws.com/qgis2web_2023_05_10-16_32_12_096332/index.html#10/39.4008/-76.4407)
+Web Map URL:
+[Italian restaurants near Baltimore area](https://italianrestaurant.s3.amazonaws.com/qgis2web_2023_05_10-16_32_12_096332/index.html#10/39.4008/-76.4407)
 
-I have downloaded/exported GIS data for the Italian restaurants near Baltiomre from https://overpass-turbo.eu/ by applying the below piece of code:
+I have downloaded/exported GIS data for the Italian restaurants near Baltimore from https://overpass-turbo.eu/ by applying the below piece of code.
 Created web map with QGIS2Web (QGIS3) to publish Italian restaurants GIS data to the web and make it accessible to other users. 
 
 /*

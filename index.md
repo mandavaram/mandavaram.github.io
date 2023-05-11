@@ -11,6 +11,10 @@ Transportation - (https://opendata.maryland.gov/browse?category=transportation)<
 Real Estate - (https://opendata.maryland.gov/browse?q=real%20estate&sortBy=relevance)<br>
 Agricultural - (https://opendata.maryland.gov/browse?category=agriculture)<br> 
 
+-----------------
+
+#Sample maps generated using R environment
+-------------------------------------------
 
 ![Howard County % Asian population map](/images/Howard_County_Asian_map.png "Howard County % Asian population map")
 ---

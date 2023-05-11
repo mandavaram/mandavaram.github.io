@@ -1,6 +1,6 @@
 ---
 title: "Italian restaurants near Baltimore map URL"
-excerpt: "Lab 10 Assignment work <br/><img src='/images/Italian_Restaurants_near_Baltimore.png'>"
+excerpt: "Lab 10 Assignment work: Created Web Mapping with QGIS2Web (QGIS3) <br/><img src='/images/Italian_Restaurants_near_Baltimore.png'>"
 collection: portfolio
 ---
 

@@ -15,10 +15,14 @@ The analysis utilizes U.S. census data at the census tract level, which is a lar
 With this dataset, we will try to analyze and export a report mapping Frederick County housing cost varies based on household income percentage and summarize statistical findings on the County VS State Vs Country level.
 
 ## Data sources:
-I use data from the following sources: 
+Used data from the following sources: 
+
 •	Median gross monthly rents as a percentage of income for 2017-2021 are from Table B25071 of the 2021 American Community Survey 5-year estimates.
+
 •	Median monthly housing costs as a percentage of income for 2017-2021 are from Table B25092 of the 2021 American Community Survey 5-year estimates.
+
 •	Census tract boundaries are from the U.S. Census Bureau cartographic boundaries data.
+
 •	Road geometry is also from the U.S. Census Bureau.
 
 ## Environment: 

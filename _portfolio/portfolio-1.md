@@ -1,6 +1,6 @@
 ---
 title: "Final Project: Relative housing costs by census tract in Frederick county, MD"
-excerpt: "Final project work: <br/><a href="https://www.Youtube.com/"><\a>"
+excerpt: "Final project work: <br/><a href="https://www.Youtube.com/"></a>"
 collection: portfolio
 ---
 

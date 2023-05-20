@@ -30,5 +30,6 @@ Used data from the following sources:
 ## Environment: 
 R environment
 
+## Source code with instruction: <a href="/_pages/Relative_Housing_Costs_Analysis.html">Relative housing costs analysis</a>
 
 

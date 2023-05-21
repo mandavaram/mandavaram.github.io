@@ -11,9 +11,9 @@
 
 <meta name="author" content="RMandava" />
 
-<meta name="date" content="2023-05-20" />
+<meta name="date" content="2023-05-21" />
 
-<title>Relative Housing Costs Analysis. Frederick County, MD.</title>
+<title>Relative housing costs by census tract, Frederick County, Maryland.</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,10 +350,10 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Relative Housing Costs Analysis. Frederick
-County, MD.</h1>
+<h1 class="title toc-ignore">Relative housing costs by census tract,
+Frederick County, Maryland.</h1>
 <h4 class="author">RMandava</h4>
-<h4 class="date">2023-05-20</h4>
+<h4 class="date">2023-05-21</h4>
 
 </div>
 
@@ -1087,6 +1087,19 @@ pl3 +
 <p>This corresponds with the same observation from the following
 histogram, which indicates that housing expenditures in Frederick County
 are somewhat lower for typical homeowners who don’t have mortgages.</p>
+<pre class="r"><code>#library(sf)
+st_write(mgrpi_tr, &quot;../bin/mgrpi_tr_Variables.geoJSON&quot;)</code></pre>
+<pre><code>## Writing layer `mgrpi_tr_Variables&#39; to data source 
+##   `../bin/mgrpi_tr_Variables.geoJSON&#39; using driver `GeoJSON&#39;
+## Writing 55 features with 6 fields without geometries.</code></pre>
+<pre class="r"><code>st_write(mscohpi_m_tr, &quot;../bin/mscohpi_m_tr_Variables.geoJSON&quot;)</code></pre>
+<pre><code>## Writing layer `mscohpi_m_tr_Variables&#39; to data source 
+##   `../bin/mscohpi_m_tr_Variables.geoJSON&#39; using driver `GeoJSON&#39;
+## Writing 65 features with 6 fields without geometries.</code></pre>
+<pre class="r"><code>st_write(mscohpi_nm_tr, &quot;../bin/mscohpi_nm_tr_Variables.geoJSON&quot;)</code></pre>
+<pre><code>## Writing layer `mscohpi_nm_tr_Variables&#39; to data source 
+##   `../bin/mscohpi_nm_tr_Variables.geoJSON&#39; using driver `GeoJSON&#39;
+## Writing 19 features with 6 fields without geometries.</code></pre>
 </div>
 
 

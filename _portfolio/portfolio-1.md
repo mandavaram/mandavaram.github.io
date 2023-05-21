@@ -1,11 +1,9 @@
 ---
-title: "Final Project: Relative housing costs by census tract in Frederick county, MD <br/>"
-excerpt: "<br/> [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
-<br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> <br/>
+title: "Final Project: Relative housing costs by census tract in Frederick county, Maryland <br/>"
+excerpt: "<br/><br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> <br/>
           <br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners with Mortgages).png'>  <br/>
           <br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners wo Mortgages).png'>"
 collection: portfolio
-url: <a href="/_pages/Relative_Housing_Costs_Analysis.html">Relative housing costs analysis</a>
 ---
 
 ## Project Name: 
@@ -17,6 +15,8 @@ The analysis utilizes U.S. census data at the census tract level, which is a lar
 
 ## Abstract: 
 With this dataset, we will try to analyze and export a report mapping Frederick County housing cost varies based on household income percentage and summarize statistical findings on the County VS State Vs Country level.
+
+## <a href="/_pages/Relative_Housing_Costs_Analysis.html">Project source code with instructions:</a>
 
 ## Data sources:
 Used data from the following sources: 
@@ -31,7 +31,5 @@ Used data from the following sources:
 
 ## Environment: 
 R environment
-
-## Source code with instruction: <a href="/_pages/Relative_Housing_Costs_Analysis.html">Relative housing costs analysis</a>
 
 

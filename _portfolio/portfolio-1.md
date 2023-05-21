@@ -1,6 +1,7 @@
 ---
-title: "Final Project: Relative housing costs by census tract in Frederick county, MD <br/><a href="/_pages/Relative_Housing_Costs_Analysis.html">Relative housing costs analysis</a>"
-excerpt: "<br/><br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> <br/>
+title: "Final Project: Relative housing costs by census tract in Frederick county, MD <br/>"
+excerpt: "<br/> [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+<br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> <br/>
           <br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners with Mortgages).png'>  <br/>
           <br/><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners wo Mortgages).png'>"
 collection: portfolio

@@ -31,7 +31,6 @@ Used data from the following sources:
 
  - Road geometry is also from the U.S. Census Bureau, and is accessed via the tigris **roads()** function.
  
- 
  ## Analysis and Results:
  
  Performed housing cost analysis over the household income for the below 3 variables in the time frame 2017-2021:

@@ -30,10 +30,8 @@ Used data from the following sources:
  - Census tract boundaries are from the U.S. Census Bureau cartographic boundaries data for 2021, and are accessed via the tigris **tracts()** function.
 
  - Road geometry is also from the U.S. Census Bureau, and is accessed via the tigris **roads()** function.
- ## 
- 
- ## Analysis and Results:
- 
+
+## Analysis and Results:
  Performed housing cost analysis over the household income for the below 3 variables in the time frame 2017-2021:
  
 - B25071_001 Estimated median gross rent as a percentage of household income.

@@ -43,7 +43,7 @@ Used data from the following sources:
 
 <table>
       <tr>
-          <td colspan='2'>Mapping Frederick County housing cost variation of 2017-2021 timeframe</td>
+          <td colspan='2' align='center'>Mapping Frederick County housing cost variation of 2017-2021 timeframe</td>
       </tr>       
        <tr>
           <td width='60%'><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> </td>

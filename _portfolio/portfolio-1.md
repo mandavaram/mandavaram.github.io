@@ -41,19 +41,23 @@ Used data from the following sources:
 <table><tr>
           <td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> </td>
           <td>The map shows the estimated median gross rent as a percentage of household income across Frederick County, for the 2017-2021 timeframe.
+              
               In the map, several census tracts in the County are home to renters who have high costs of living, and map there are multiple census tracts across the county where renters are housing cost burdened. 
+              
               There are grey areas corresponding to census tracts that were not considered due to missing or too high coefficients of variation.
            </td>
        </tr>
        <tr>
           <td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners with Mortgages).png'> </td>
           <td>Created a comparable map for median selected costs of housing as a percentage of household income for owners with mortgages.
+              
               This map shows the median homeowning household with a mortgage in almost all of Frederick County census tracts is not housing cost burdened.
            </td>
        </tr>
        <tr>
           <td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Owners wo Mortgages).png'></td>
           <td>Created a comparable map for median selected costs of housing as a percentage of household income for owners without mortgages. 
+              
               This observation of the map indicates that housing expenditures in Frederick County are somewhat lower for typical homeowners who don’t have mortgages.
            </td>
        </tr>

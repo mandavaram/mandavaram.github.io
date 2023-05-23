@@ -30,7 +30,14 @@ Used data from the following sources:
  - Census tract boundaries are from the U.S. Census Bureau cartographic boundaries data for 2021, and are accessed via the tigris **tracts()** function.
 
  - Road geometry is also from the U.S. Census Bureau, and is accessed via the tigris **roads()** function.
-<table><tr><td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> </td></tr></table>
+<table><tr>
+          <td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> </td>
+          <td>The map shows the estimated median gross rent as a percentage of household income across Frederick County, for the 2017-2021 timeframe.
+              In the map, several census tracts in the County are home to renters who have high costs of living, and map there are multiple census tracts across the county where renters are housing cost burdened. 
+              There are grey areas corresponding to census tracts that were not considered due to missing or too high coefficients of variation.
+           </td>
+       </tr>
+</table>
 ## Environment: 
 R environment
 

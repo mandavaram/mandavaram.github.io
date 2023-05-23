@@ -11,7 +11,7 @@
 
 <meta name="author" content="RMandava" />
 
-<meta name="date" content="2023-05-21" />
+<meta name="date" content="2023-05-22" />
 
 <title>Relative housing costs by census tract, Frederick County, Maryland.</title>
 
@@ -353,22 +353,21 @@ display: none;
 <h1 class="title toc-ignore">Relative housing costs by census tract,
 Frederick County, Maryland.</h1>
 <h4 class="author">RMandava</h4>
-<h4 class="date">2023-05-21</h4>
+<h4 class="date">2023-05-22</h4>
 
 </div>
 
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>In this document, I’m going to perform basic analyses of housing
-costs for renters and homeowners in Frederick County Maryland based on
-U.S. census tract level data. Above the level of the census block groups
-and the census blocks, the census tract is the largest census specific
-geography. I use the median gross rent as a percentage of household
-income for renters and the median selected cost of housing as a
-percentage of household income for homeowners to measure housing costs.
-(See the References section below for discussion of other ways to
-measure housing costs.)</p>
+<p>Analysis of housing costs focusing on renters and homeowners in
+Frederick County, Maryland, looking at U.S. census data at the census
+tract level. The analysis utilizes U.S. census data at the census tract
+level, which is a larger geographic unit compared to census block groups
+and blocks. To gauge housing costs, the study considers two measures:
+median gross rent as a percentage of household income for renters and
+median selected housing costs as a percentage of household income for
+homeowners.</p>
 <p>For those readers unfamiliar with the <a href="https://www.r-project.org/">R statistical software</a> and the
 additional <a href="https://www.tidyverse.org/">Tidyverse software</a> I
 use to manipulate and plot data, I’ve included some additional
@@ -381,17 +380,17 @@ started with the Tidyverse”</a>.</p>
 </div>
 <div id="libraries" class="section level2">
 <h2>Libraries</h2>
-<p>I use the following packages for the following purposes:</p>
+<p>Used the following packages:</p>
 <ul>
-<li><p><strong>tidyverse</strong>: do general data
+<li><p><strong>tidyverse</strong>: Do general data
 manipulation.</p></li>
-<li><p><strong>tidycensus</strong>: retrieve U.S. census data.</p></li>
-<li><p><strong>tigris</strong>: retrieve U.S. census geospatial
+<li><p><strong>tidycensus</strong>: Retrieve U.S. census data.</p></li>
+<li><p><strong>tigris</strong>: Retrieve U.S. census geospatial
 data.</p></li>
-<li><p><strong>sf</strong>: manipulate geospatial data.</p></li>
-<li><p><strong>viridis</strong>: obtain special color palettes for
+<li><p><strong>sf</strong>: Manipulate geospatial data.</p></li>
+<li><p><strong>viridis</strong>: Obtain special color palettes for
 graphs.</p></li>
-<li><p><strong>knitr</strong>: display tabular data.</p></li>
+<li><p><strong>knitr</strong>: Display tabular data.</p></li>
 </ul>
 <pre class="r"><code>v21 &lt;- load_variables(2021, &quot;acs5&quot;, cache = TRUE)%&gt;%
      filter(name == &#39;B25071_001&#39;)
@@ -445,7 +444,7 @@ Tract-level data is not available in the American Community Survey
 <p>As noted in previous analyses I’ve done, a typical census tract in
 Frederick County contains about 6,000 people, and is roughly comparable
 in both size and population to a Columbia village.</p>
-<p>I use the tidycensus <strong>get_acs()</strong> function to retrieve
+<p>Used the tidycensus <strong>get_acs()</strong> function to retrieve
 median gross rent as a percentage of household income from the 2021 ACS
 5-year estimates for all census tracts in Frederick County. This
 function returns data in tidy format, with the following columns:</p>
@@ -460,15 +459,14 @@ variable’s value.</p></li>
 <li><p><strong>moe</strong>. The margin of error for the
 estimate.</p></li>
 </ul>
-<p>I use <strong>estimate</strong> and <strong>moe</strong> to calculate
+<p>Used <strong>estimate</strong> and <strong>moe</strong> to calculate
 a coefficient of variation <strong>cv</strong> for the data. The CV can
 be used to gauge the relative reliability of the estimates, as discussed
 below.</p>
-<p>I similarly use <strong>get_acs()</strong> to retrieve median
-selected costs of housing as a percentage of household income for
-homeowners with and without a mortgage, using variables “B25092_002” and
-“B25092_003” respectively. Again I calculate CV values for the
-estimates.</p>
+<p>Used <strong>get_acs()</strong> to retrieve median selected costs of
+housing as a percentage of household income for homeowners with and
+without a mortgage, using variables “B25092_002” and “B25092_003”
+respectively. Again I calculate CV values for the estimates.</p>
 <pre class="r"><code># Median gross rent as a percentage of household income in the past 12 months for all the census tracts in Frederick County, Maryland.
 
 mgrpi_tr &lt;- get_acs(
@@ -505,9 +503,9 @@ mscohpi_nm_tr &lt;- get_acs(
 ) %&gt;%
   mutate(cv = 100 * ((moe / 1.645) / estimate))</code></pre>
 <pre><code>## Getting data from the 2017-2021 5-year ACS</code></pre>
-<p>I next get the same measures for Frederick County as a whole (and
-other Maryland counties, in case I want to use them in future analyses),
-using the same general procedure as above.</p>
+<p>Get the same measures for Frederick County as a whole (and other
+Maryland counties, in case I want to use them in future analyses), using
+the same general procedure as above.</p>
 <pre class="r"><code># Median gross rent as a percentage of household income in the past 12 months for all the counties in Maryland.
 
 mgrpi_co &lt;- get_acs(
@@ -597,14 +595,14 @@ map_co &lt;- counties(
   select(GEOID)</code></pre>
 <p>To help orient readers as to the locations of the census tracts, I
 also want any maps generated to also display major roads in Frederick
-County that correspond in whole or in part to census tract boundaries. I
-use the tigris function <strong>roads()</strong> to return geometry for
+County that correspond in whole or in part to census tract boundaries.
+Used the tigris function <strong>roads()</strong> to return geometry for
 all Frederick County roads.</p>
 <p>Because I don’t need or want to display each and every Frederick
-County road, I use the <strong>RTTYP</strong> and
+County road, Used the <strong>RTTYP</strong> and
 <strong>FULLNAME</strong> variables to filter the results to retain only
 major roads (interstates and U.S. highways) and minor roads (Maryland
-state routes, and roads with “Pkwy” in their name). I store the geometry
+state routes, and roads with “Pkwy” in their name). Stored the geometry
 for each in separate variables, so that I can plot them at different
 widths.</p>
 <pre class="r"><code>all_roads &lt;- roads(state = &quot;24&quot;, county = &quot;021&quot;, class = &quot;sf&quot;, progress_bar = FALSE)
@@ -619,8 +617,8 @@ minor_roads_geo &lt;- all_roads %&gt;%
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
-<p>In answering this question, I perform an analysis: - How is the cost
-of housing in Frederick County different from one another?</p>
+<p>Performed an analysis: - How is the cost of housing in Frederick
+County different from one another?</p>
 </div>
 <div id="summary-of-housing-cost-statistics" class="section level2">
 <h2>Summary of housing cost statistics</h2>

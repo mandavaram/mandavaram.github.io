@@ -30,7 +30,7 @@ Used data from the following sources:
  - Census tract boundaries are from the U.S. Census Bureau cartographic boundaries data for 2021, and are accessed via the tigris **tracts()** function.
 
  - Road geometry is also from the U.S. Census Bureau, and is accessed via the tigris **roads()** function.
-<table><tr><td>Test table data </td></tr></table>
+<table><tr><td><img src='/images/2017-2021 Frederick County Relative Housing Costs (Renters).png'> </td></tr></table>
 ## Environment: 
 R environment
 

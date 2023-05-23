@@ -16,7 +16,7 @@ Analysis of housing costs focusing on renters and homeowners in Frederick County
 The analysis utilizes U.S. census data at the census tract level, which is a larger geographic unit compared to census block groups and blocks. To gauge housing costs, the study considers two measures: median gross rent as a percentage of household income for renters and median selected housing costs as a percentage of household income for homeowners.
 
 ## Abstract: 
-With this dataset, we will try to analyze and export a report mapping Frederick County housing cost varies based on household income percentage and summarize statistical findings on the County VS State Vs Country level.
+With this dataset, analyze and export a report mapping Frederick County housing cost varies based on household income percentage and summarize statistical findings on the County VS State Vs Country level.
 
 ## <a href="/_pages/Relative_Housing_Costs_Analysis.html">Project source code with instructions:</a>
 

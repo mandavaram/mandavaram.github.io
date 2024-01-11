@@ -12,7 +12,8 @@ redirect_from:
 
 Education
 ======
-* B.Tech in Computer Science, JNTU University, INDIA
+* Master's of Professional Studies in GIS, UMBC, USA
+* Bachelor of Technology in Computer Science, JNTU University, INDIA
 * Microsoft Certified Application Developer (MCAD) in VB.NET.    (MCP ID: 3633414)
 
 Work experience

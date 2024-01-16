@@ -1,7 +1,7 @@
 Hi, I'm Ram Mandava <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 <br>
 <br>
-Recently I completed a Master of Professional Studies (M.P.S) in GIS Technologies at UMBC College.
+I'm a recent graduate of a Master of Professional Studies in Geographic Information Systems (GIS) Program at UMBC.
 <br>
 Currently working as an application developer using Microsoft .NET technologies and interested in GIS development like web-based Esri geospatial applications. My goal is to learn and improve the skill set in GIS technologies and Spatial analysis. I would like to improve my skill set and work projects in areas like geospatial ontologies, spatial pattern analysis, advanced raster processing, spatial interpolation, and geo-statistics, database design and systems, dynamic GIS modeling, and computational geometry and mathematical techniques used in GIS.
 

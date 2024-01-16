@@ -1,6 +1,6 @@
 ---
 title: "Baltimore City % White population map"
-excerpt: "Lab 6 Assignment work: <br/><img src='/images/baltimore_white_pop_percent.png'>"
+excerpt: "Project work: <br/><img src='/images/baltimore_white_pop_percent.png'>"
 collection: portfolio
 ---
 

@@ -18,7 +18,7 @@ Education
 
 Work experience
 ======
-* 10+ years of software life cycle experience in developing Web, Windows, and Object-Oriented applications using Microsoft Technologies on the Microsoft Windows   platform.
+* 20+ years of software life cycle experience in developing Web, Windows, and Object-Oriented applications using Microsoft Technologies on the Microsoft Windows   platform.
 
   
 Technical Skills

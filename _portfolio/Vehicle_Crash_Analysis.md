@@ -1,11 +1,13 @@
 ---
 title: "Project: Maryland Statewide Vehicle Crash & Fatality Analysis <br/>"
-excerpt: "<img src='/images/Maryland_Statewide_Vehicle_Crash_Fatality_Analysis.png'> <br/>         
+excerpt: "Maryland Statewide Vehicle Crash & Fatality Analysis <br/>
+<br/>
+<img src='/images/Maryland_Statewide_Vehicle_Crash_Fatality_Analysis.png'>       
 collection: portfolio
 ---
 
 ## Project Name: 
-Relative housing costs by Census tract, Frederick County, Maryland
+Maryland Statewide Vehicle Crash & Fatality Analysis
 
 ## Introduction: 
 Analysis of housing costs focusing on renters and homeowners in Frederick County, Maryland, looking at U.S. census data at the census tract level. 

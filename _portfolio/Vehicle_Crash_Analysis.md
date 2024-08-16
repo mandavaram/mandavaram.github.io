@@ -1,6 +1,6 @@
 ---
-title: "Project: Maryland Statewide Vehicle Crash & Fatality Analysis <br/>"
-excerpt: "Maryland Statewide Vehicle Crash & Fatality Analysis <br/>
+title: "Maryland Statewide Vehicle Crash & Fatality Analysis <br/>"
+excerpt: "Maryland Statewide Vehicle Crash & Fatality Analysis" <br/>
 <br/>
 <img src='/images/Maryland_Statewide_Vehicle_Crash_Fatality_Analysis.png'>       
 collection: portfolio

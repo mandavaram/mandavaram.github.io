@@ -1,6 +1,6 @@
 ---
 title: "Vehicle Crash & Fatality Analysis"
-excerpt: "Project: <br/><img src='/images/Maryland_Statewide_Vehicle_Crash_Fatality_Analysis.png'>"      
+excerpt: "<br/><img src='/images/Maryland_Statewide_Vehicle_Crash_Fatality_Analysis.png'>"      
 collection: portfolio
 ---
 

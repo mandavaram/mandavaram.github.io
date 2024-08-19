@@ -1,6 +1,6 @@
 ---
 title: "Howard County % Asian population map"
-excerpt: "Project: <br/><img src='/images/Howard_County_Asian_map.png'>"
+excerpt: "<img src='/images/Howard_County_Asian_map.png'>"
 collection: portfolio
 ---
 

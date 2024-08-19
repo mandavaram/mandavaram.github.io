@@ -1,6 +1,6 @@
 ---
 title: "Baltimore City household income map"
-excerpt: "Project: <br/><img src='/images/baltimore_household_income.png'>"
+excerpt: "<img src='/images/baltimore_household_income.png'>"
 collection: portfolio
 ---
 

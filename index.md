@@ -7,7 +7,7 @@ Working as a Sr. Software Developer with over 20+ years of extensive programming
 
 Graduated with a Master of Professional Studies in Geographic Information Systems (GIS) Program at UMBC College.
 
-<!---  Currently working as an application developer using Microsoft .NET technologies and interested in GIS development like web-based Esri geospatial applications. My goal is to learn and improve the skill set in GIS #technologies and Spatial analysis. I would like to improve my skill set and work projects in areas like geospatial ontologies, spatial pattern analysis, advanced raster processing, spatial interpolation, and geo-statistics, # database design and systems, dynamic GIS modeling, and computational geometry and mathematical techniques used in GIS. -->
+Interested in GIS development like web-based Esri geospatial applications. I would like to improve my skill set and work on projects in areas like geospatial ontologies, spatial pattern analysis, advanced raster processing, spatial interpolation, geo-statistics, database design, dynamic GIS modeling, and computational geometry.
 
 Interest in analyzing and developing projects in below areas:
 

@@ -5,7 +5,7 @@ Hi, I'm Rambabu Mandava <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia
 Working as a Sr. Software Developer with over 20+ years of extensive programming and design experience in developing web Client/Server, object-oriented applications, and Enterprise business solutions utilizing Microsoft product applications and technologies on the Microsoft Windows platform. Greatly knowledgeable with a project's Software Development Life Cycle (SDLC), generating reports, and Business Process Management workflows. Expertise in system analysis, coding/scripting, and bug fixing, including training and mentoring staff. Additionally, I have experience in Financial service sectors such as Transportation, Insurance, Real Estate, Mortgage and Wireless Technology.
 <br>
 
-2+ years of experience in designing, developing, and implementing GIS applications using GIS software such as ArcGIS Pro/Online and QGIS, with a strong background in data management, spatial analysis, building datasets, and map production. Proficient in spatial analysis, geoprocessing, and web mapping, with strong skills in programming languages such as Python, R script, JavaScript, and SQL. 
+2+ years of experience in designing, developing, and implementing GIS applications using GIS software such as ArcGIS Pro/Online and QGIS, with a strong background in data management, spatial analysis, building datasets, and map production. <br> Proficient in spatial analysis, geoprocessing, and web mapping, with strong skills in programming languages such as Python, R script, JavaScript, and SQL. 
 <br>
 
 Graduated with a Master of Professional Studies in Geographic Information Systems (GIS) Program at UMBC College.

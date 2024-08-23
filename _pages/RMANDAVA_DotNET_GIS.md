@@ -3,7 +3,7 @@
 **E-mail: mandava.rambabu@gmail.com**  
 
 
-# **Professional Summary**                                                                                                                                                                                                                                                                                                                                                                                                                   
+# ***Professional Summary***                                                                                                                                                                                                                                                                                                                                                                                                                  
 - 20+ Years of software life cycle experience in developing Internet, Intranet, Client/Server, and Object-oriented applications using **Microsoft Technologies** on** the Microsoft Windows** platform.
 - Experience in working with all versions of **Visual Studio.NET** and **Microsoft .NET Framework**.
 - Design and develop web applications using **ASP.Net, C#, VB.Net, WCF, ASP.NET MVC, AJAX, Web Services, Web API, XML, HTML, CSS, Bootstrap, AngularJS, jQuery,** and **JavaScript**.

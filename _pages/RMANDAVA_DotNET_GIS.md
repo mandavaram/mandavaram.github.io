@@ -26,13 +26,13 @@
 
 **Education**                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
-**Master of Professional Studies in Geographic Information Systems (GIS), UMBC USA**
+* **Master of Professional Studies in Geographic Information Systems (GIS), UMBC USA**
 
-**Bachelor of Technology** **(Computer Science & Engineering), JNTU India**
+* **Bachelor of Technology** **(Computer Science & Engineering), JNTU India**
 
 **Certifications**                                                                                                                                                                                                                       
 
-**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.    (MCP ID: 3633414)**
+* **M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.    (MCP ID: 3633414)**
 
 **Technical Skills**                                                                                                                                                                                                                    
 
@@ -53,10 +53,7 @@
 
 **Professional Experience:**
 
-**Client:  State Highway Administration, Baltimore, MD                                                                                                      April’12 to Current**                                        
-
-Sr. Software Developer	  
-
+|**Client:  State Highway Administration, Baltimore, MD ** | ** April’12 to Current** | **Sr. Software Developer** |                                        
 
 
 **Project# 1: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.

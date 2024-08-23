@@ -24,17 +24,17 @@
 - Having Knowledge and experience with developing solutions utilizing Microsoft Application Blocks, Enterprise Library, CAB, SCSF, Entity Framework, Microsoft.Net patterns, practices library, TFS, and Azure DevOps.
 - Responsible for the Creation of **T-SQL**, **PL/SQL**, Stored Procedures, DTS, **SSIS**, SSAS, SSRS, etc.
 
-**Education**                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-
-* **Master of Professional Studies in Geographic Information Systems (GIS), UMBC USA**
-
-* **Bachelor of Technology** **(Computer Science & Engineering), JNTU India**
-
+**Education**                                                                                                                                                                                                                                                                                                                                                                                                                                             
+* |**Master of Professional Studies in Geographic Information Systems (GIS), UMBC USA**|
+  | - |
+* |**Bachelor of Technology** **(Computer Science & Engineering), JNTU India**|
+  | - |
 **Certifications**                                                                                                                                                                                                                       
 
-* **M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.    (MCP ID: 3633414)**
-
-**Technical Skills**                                                                                                                                                                                                                    
+* |**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.    (MCP ID: 3633414)**|
+  | - |
+  
+**Technical Skills**                                                                                                                                                                                                                 
 
 |**Specialization** |**:**|ASP.NET, C#.NET, VB.NET, ADO.NET, VB6, VBScript, JavaScript, XML, SQL Server, SSIS, SSRS, Oracle, XSLT, XSD, Win/ Web Forms, Web/ Windows Services, .Net Remoting, VSTO, RStudio, Visual Studio .NET 2005/2008/2010/2012/2017/2019, and .Net Framework 1.1/2.0/3.0/3.5/4.0/4.5/4.6.1/4.7.1.|
 | - | - | - |
@@ -53,8 +53,8 @@
 
 **Professional Experience:**
 
-|**Client:  State Highway Administration, Baltimore, MD ** | ** April’12 to Current** | **Sr. Software Developer** |                                        
-
+|**Client:  State Highway Administration, Baltimore, MD** |**            Sr. Software Developer** |**            April’12 to Current**|  
+| - | - | - |
 
 **Project# 1: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.
 
@@ -98,9 +98,9 @@
 
 **Environment:** Visual Studio 2019, C#, MVC5, ASP.NET, ADO.NET, VB.NET, XML, TFS, Azure DevOps, HTML, CSS, .NET 4.7.1, LINQ, TOAD, IIS 7.5, Java Script, AJAX, jQuery, JSON, Bootstrap, SSRS, SSIS, SQL Server 2008 and Oracle 11g, 19c.
 
-**Client:  GEICO, Chevy Chase, MD                                                                                                                                               June’11 to Mar’12**                                        
-
-Sr. Software Developer	  
+|**Client:  GEICO, Chevy Chase, MD | **     Sr. Software Developer**| **June’11 to Mar’12**  |                                    
+ | - | - | - | 
+	  
 
 
 
@@ -119,10 +119,8 @@ Sr. Software Developer
 
 **Environment:** Visual Studio 2010, C#, ASP.NET, ADO.NET, VB.NET, XML, XPATH, TFS, HTML, CSS, .NET 4.0, Win Forms, VB6, LINQ, SSIS, FTP, TOAD, WCF, IIS 6.0, Java Script, AJAX, JQuery, Oracle 10g and SQL Server 2008.
 
-**Client:  NRG Energy, Princeton, NJ                                                                                                                                               Oct’10 to May’11** 
-
-Sr. Software Developer.
-
+|**Client:  NRG Energy, Princeton, NJ** | **Sr. Software Developer.**|**Oct’10 to May’11** |
+| - | - | - | 
 
 
 **Project: Bloomberg Credit Rating** is used to analyze Credit Risk and to automate the LIBOR & and Fed Funds interest rate curves used for interest payments on NRG’s counterparties posted collateral by downloading the Financial, Income Statement information and Credit Interest Rates with the use of Bloomberg Data Services.
@@ -142,10 +140,8 @@ Sr. Software Developer.
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, TFS, HTML, CSS, Win Forms, Excel VSTO, Excel-VBA, Java Script, SQL 2005, SSIS, DTS, .NET 3.5, FTP, AJAX, TOAD, IIS 6.0 and Oracle 10g.
 
-**Client:  Verizon, Piscataway, NJ                                                                                                                                                      Aug’09 to Sep’10**                 
-
-Lead Developer
-
+|**Client:  Verizon, Piscataway, NJ** | **Lead Developer**|**Aug’09 to Sep’10** |
+| - | - | - | 
 
 
 Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application used to correct a misaligned relationship between Data BAN, Video Circuit ID, Voice CAN, and uCSR profile CAN (PCAN).  A misaligned relationship can lead to order and billing fallouts. The tool will relay all the changes to the RIBS billing system.
@@ -164,11 +160,8 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Involved in Nunit case Testing & and preparing the MAC documents.
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, TFS, HTML, Win Forms, VB6, Java Script, SQL 2008, SSIS, IIS 6.0, AJAX, jQuery, .NET 3.5,   WCF, and BizTalk Server 2006     
-
-<a name="ole_link1"></a>**Client:  Fidelity National Financial, INC PITTSBURGH, PA                                                                                                          Jan’08 to July’09**   
-
-Sr. Software Developer
-
+|**Client:  Fidelity National Financial, INC PITTSBURGH, PA** | **Sr. Software Developer**|**Jan’08 to July’09** |
+| - | - | - | 
 
 
 **Project: AssetLinkLP (Nationwide Provider of Mortgage Default Services)** is a web-based application used for the management and marketing of bank-owned properties and is developed to manage every level of the REO process from investor relations, acquisition of the asset, eviction, pre-marketing, marketing, negotiating, and closing.
@@ -187,10 +180,8 @@ Sr. Software Developer
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, VSS, HTML, JavaScript, SQL 2005, SSRS, SMTP, Visio, AJAX, IIS 6.0, Crystal Reports 9.0, JQuery, SCRUM, VB6, UML and BizTalk Server 2006.
 
-**Client:  CT State Elections Enforcement Commission, CT		                                                                                   Aug’07 to Jan’08**          
-
-Sr. Software Developer
-
+|**Client:  CT State Elections Enforcement Commission, CT** | **Sr. Software Developer**|**Aug’07 to Jan’08** |
+| - | - | - | 
 
 
 **Project: eCRIS** (Campaign Financial Information Reporting System) is the State Election Enforcement Commission's (SEEC) online database of electronically filed campaign finance reports and registration information of all candidates and committees established in Connecticut. 
@@ -205,12 +196,9 @@ Sr. Software Developer
 - Involved in writing various Stored Procedures, and T-SQL statements in SQL Server 2005 & Oracle 10g.
 
 **Environment:** Visual Studio 2005, ASP.NET 2.0, C#.NET, ADO.NET, XML, Web Services, JavaScript, XSLT, Windows Services, CSS, VSS, TFS, SSRS, UML, MVC, Oracle, SQL Server 2005	
-
-**Client:  The Hartford Insurance, Hartford CT                                                                                                                              Nov’06 to July’07**                                                                            
-
-Sr. Software Developer
-
-
+                                                                         
+|**Client:  The Hartford Insurance, Hartford CT** | **Sr. Software Developer**|**Nov’06 to July’07** |
+| - | - | - | 
 
 **Project: HartSource** is the financial service product that provides the life insurance of Business Investment for Small and large Commercial businesses. Aries Loss Control and Renewal Download are the core interfaces run to facilitate the services to Hart source. These applications (interfaces) were implemented using .Net Technologies.  
 
@@ -223,9 +211,9 @@ Sr. Software Developer
 
 **Environment:** Visual Studio 2005, VB .NET, ASP.NET, ADO.NET, COM, VB6, UML, Excel-VBA, VSTO, Oracle 9i and MS Access.  
 
-**Client:  Bluespring Software, Cincinnati, OH                                                                                                                                 Jan’06 to Oct’06**                                             
+|**Client:  Bluespring Software, Cincinnati, OH** | **Sr. Software Developer**|**Jan’06 to Oct’06** |
+| - | - | - |                 
 
-Sr. Software Developer
 
 **Project: Active Directory Activities** is to create the Active Directory Web Services (Create, Retrieve, Update, and Delete Active Directory Web Services) and Get File Activity Web Service for Bluespring's BPM Suite.
 
@@ -239,12 +227,10 @@ Sr. Software Developer
 
 **Environment:** Windows 2003, VS.NET2005, C#.NET, VB 6.0, XML, XSD, Web Services, DOM, IIS 5.0, VSS, VBScript and Infragistics.
 
-**Client:  Syscom Technologies, Atlanta, GA                                                                                                                                   Feb’04 to Dec’05**                                                  
-
-Software Developer                                                           
-**
-
-
+                                              
+|**Client:  Syscom Technologies, Atlanta, GA** | **Software Developer**|**Feb’04 to Dec’05** |
+| - | - | - |  
+                                                          
 **Project# 1: Service Management** is a product-based project in line with the Sales Module of **Microsoft Navision Axapta3.0** ERP package. This project allows the service company to manage the service process and is a Smart Client application built using the Windows Forms classes of the Microsoft .Net Framework and XML Web Services. This module deals with taking service orders from the client and allows users to view, modify, and add projects and tasks that are shared with other users.
 
 **Responsibilities:**

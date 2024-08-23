@@ -16,8 +16,8 @@
 - Experience in Financial** service sectors like Real Estate, Banking**,** Mortgage,** Insurance, and Wireless Technology.
 - Experience in design & and development of enterprise business solutions utilizing the .NET, EAI, and ETL technologies.
 - Extensive development experience in LINQ, VBScript, JavaScript, jQuery, JSON, and AJAX-based applications.
-- `       `Strong Knowledge of the Software Development Life Cycle (**SDLC**) of a project.
-- ` 	`Experience in .Net Framework 1.1/2.0/3.0/3.5/4.0/4.5/4.6.1/4.7.1 (WCF, WF, and WPF), BizTalk Server, and SharePoint.
+- Strong Knowledge of the Software Development Life Cycle (**SDLC**) of a project.
+- Experience in .Net Framework 1.1/2.0/3.0/3.5/4.0/4.5/4.6.1/4.7.1 (WCF, WF, and WPF), BizTalk Server, and SharePoint.
 - Expertise in system analysis, design, coding, bug fixing, training, and mentoring staff.
 - Experience in designing & and generating Crystal Reports, MS Reports, Data Reports, SSRS, and Power BI Reports.
 - Having Knowledge and experience with developing solutions utilizing Microsoft Application Blocks, Enterprise Library, CAB, SCSF, Entity Framework, Microsoft.Net patterns, practices library, TFS, and Azure DevOps.

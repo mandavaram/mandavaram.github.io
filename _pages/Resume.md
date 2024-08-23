@@ -19,7 +19,8 @@ Education
 Work experience
 ======
 * 20+ years of software life cycle experience in developing Web, Windows, and Object-Oriented applications using Microsoft Technologies on the Microsoft Windows   platform.
-
+* 2+ years of experience in designing, developing, and implementing GIS applications using GIS software such as ArcGIS Pro/Online and QGIS.
+* Proficient in spatial analysis, geoprocessing, and web mapping, with strong skills in programming languages such as Python, R script, JavaScript, and SQL.
   
 Technical Skills
 ======

@@ -1,3 +1,16 @@
+---
+layout: archive
+title: "Resume"
+permalink: /Resume/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+{% include base_path %}
+---------------
+
+
 **RAMBABU MANDAVA**  
 **Phone: 484-362-8580**      
 **E-mail: mandava.rambabu@gmail.com**  

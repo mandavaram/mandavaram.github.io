@@ -11,9 +11,9 @@ redirect_from:
 ---------------
 
 
-**RAMBABU MANDAVA**  
-**Phone: 484-362-8580**      
-**E-mail: mandava.rambabu@gmail.com**                                                                    ![MicrosoftCertification](/Microsoft_Certification.png)
+|**RAMBABU MANDAVA**  <br> **Phone: 484-362-8580**  <br>**E-mail: mandava.rambabu@gmail.com**     |                                                               ![MicrosoftCertification](/Microsoft_Certification.png)|
+| - | - |
+| - | - |
 
 # Professional Summary                                                                                                                                                                                                                                                                                                                                                                                                                  
 - 20+ Years of software life cycle experience in developing Internet, Intranet, Client/Server, and Object-oriented applications using **Microsoft Technologies** on the Microsoft Windows platform.

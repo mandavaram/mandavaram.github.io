@@ -36,10 +36,9 @@ redirect_from:
 
 **Education**                                                                                                                                                                                                                
 
-|**Education**|
-| - |
-|**Master of Professional Studies in Geographic Information Systems (GIS) UMBC, USA**|
-|**Bachelor of Technology (Computer Science & Engineering) JNTU, India**|
+|**Master of Professional Studies in Geographic Information Systems (GIS)**|**UMBC, USA**|
+| - | - |
+|**Bachelor of Technology in Computer Science & Engineering**|**JNTU, India**|
 
   
 **Certifications**                                                                                                                                                                                                                       

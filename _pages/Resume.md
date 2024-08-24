@@ -11,7 +11,7 @@
 - 2+ Experience in creating **GIS Maps**, processing **Geographic data**, and building **Spatial datasets** using **GIS software** ArcGIS Pro, ArcGIS Online, and Python/R Script programming. 
 - Experience in developing **XML Web Services** Architecture SOAP, WSDL, UDDI, and XML Schema. 
 - Experience in Win Forms, **SSIS**, **VSTO**, XML, XSD, XSL-FO, XPath, XSLT, DOM, and Assemblies.
-- Experience in Financial** service sectors like Real Estate, Banking**,** Mortgage,** Insurance, and Wireless Technology.
+- Experience in Financial service sectors like Real Estate, Banking, Mortgage, Insurance, and Wireless Technology.
 - Experience in design & and development of enterprise business solutions utilizing the .NET, EAI, and ETL technologies.
 - Extensive development experience in LINQ, VBScript, JavaScript, jQuery, JSON, and AJAX-based applications.
 - Strong Knowledge of the Software Development Life Cycle (**SDLC**) of a project.
@@ -153,7 +153,7 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Used AJAX, enhances user experience by eliminating post-back events & and Java Script for Client-side validations.
 - Maintaining, Enhancements, and Fixing the bugs of web-based applications & and web services.
 - Created SSIS packages, to move data from a single data source to a destination with no transformations.
-- Setup and Deployment** of the build, and configuration settings.
+- Setup and Deployment of the build, and configuration settings.
 - Involved in Nunit case Testing & and preparing the MAC documents.
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, TFS, HTML, Win Forms, VB6, Java Script, SQL 2008, SSIS, IIS 6.0, AJAX, jQuery, .NET 3.5,   WCF, and BizTalk Server 2006     
@@ -201,7 +201,7 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 
 **Responsibilities:**
 
-- Design & Development of Loss Control and Renewal Download Applications using VB6.0, VBA,** C#, ASP.NET & VB.NET.
+- Design & Development of Loss Control and Renewal Download Applications using VB6.0, VBA, C#, ASP.NET & VB.NET.
 - Implemented the n-tier architecture with clear separation between various logical layers namely the UI layer, Business logic layer, and the Data Access Layer.
 - Involved in converting VB6, ASP code projects to VB.NET & ASP.NET projects.
 - Involved in developing Web Forms, WinForms, and Business Components for AIRES web application and Renewal Download module using C#, VB.NET, and .NET Technologies. 
@@ -248,7 +248,7 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Designed Business Workflow process using Bluespring’s **BPM Suite.**
 - Design and Development of Web forms and related code using ASP.Net, VB.Net, **Infragistics** Tools, and XML. 
 - Involved in creating User Controls, Pie Charts, and Cascading Style Sheets.
-- Involved in **the** Integration** of the New Count Process and Sales Order Process modules to **BPM** Suite using Infragistics control development and Web Services.
+- Involved in the Integration of the New Count Process and Sales Order Process modules to **BPM** Suite using Infragistics control development and Web Services.
 - Setup and Deployment** of the build, and configuration settings.						
 
 **Environment:**  Windows 2003, VS.NET2003, C#.NET VB.NET, ASP.NET, ADO.NET, XML Web Services, HTML, Java Script, XML, DOM, DHTML, VSS, CSS, IIS 5.0, XSD, BPM Suite, IIS 5.0, VBScript, Infragistics, BPM Suite, VSS, Smart Client Technology, Microsoft MapPoint Technology and SQL Server 2000.

@@ -34,17 +34,12 @@ redirect_from:
 - Having Knowledge and experience with developing solutions utilizing Microsoft Application Blocks, Enterprise Library, CAB, SCSF, Entity Framework, Microsoft.Net patterns, practices library, TFS, and Azure DevOps.
 - Responsible for the Creation of **T-SQL**, **PL/SQL**, Stored Procedures, DTS, **SSIS**, SSAS, SSRS, etc.
 
-**Education**                                                                                                                                                                                                                
+**Education & Certifications**                                                                                                                                                                                                                
 
 |**Master of Professional Studies in Geographic Information Systems (GIS)**|**UMBC, USA**|
 | - | - |
 |**Bachelor of Technology in Computer Science & Engineering**|**JNTU, India**|
-
-  
-**Certifications**                                                                                                                                                                                                                       
-
-|**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.**|**(MCP ID: 3633414)**|
-| - | - |
+|**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.**|**(MCP ID: 3633414)**|  
   
 **Technical Skills**                                                                                                                                                                                                                 
 

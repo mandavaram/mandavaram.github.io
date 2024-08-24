@@ -59,7 +59,7 @@ redirect_from:
 |Reporting Tools |**:**|Crystal Reports 9.0/13.0, Data Reports, MS Reports, SSRS, and Power BI Reports. 	|
 |Presentation Tools|**:**|MS Visio, MS PowerPoint, MS Word, Photoshop, MS Excel, MVC, UML.|
 |Operating Systems |**:**|DOS, Windows 9x/XP/2000/2003, Unix.|
-|Tools|**:**|<p>VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps.</p><p>ESRI's ArcGIS Desktop/Online/Pro software and ArcMap</p>|
+|Tools|**:**|VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps.</p><p>ESRI's ArcGIS Desktop/Online/Pro software and ArcMap|
 
 **Professional Experience:**
 

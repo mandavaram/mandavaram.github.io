@@ -56,12 +56,13 @@ redirect_from:
 |Reporting Tools |**:**|Crystal Reports 9.0/13.0, Data Reports, MS Reports, SSRS, and Power BI Reports. 	|
 |Presentation Tools|**:**|MS Visio, MS PowerPoint, MS Word, Photoshop, MS Excel, MVC, UML.|
 |Operating Systems |**:**|DOS, Windows 9x/XP/2000/2003, Unix.|
-|Tools|**:**|VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps.</p><p>ESRI's ArcGIS Desktop/Online/Pro software and ArcMap|
+|Tools|**:**|VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps. ESRI's ArcGIS Desktop/Online/Pro software and ArcMap|
 
 **Professional Experience:**
 
-|**Client:  State Highway Administration, Baltimore, MD** |**            Sr. Software Developer** |**            April’12 to Current**|  
+|**Client** |**Role** |**Duration**|  
 | - | - | - |
+|**State Highway Administration, Baltimore, MD**|**Sr. Software Developer** |**April’12 to Current**|  
 
 **Project# 1: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.
 
@@ -105,9 +106,9 @@ redirect_from:
 
 **Environment:** Visual Studio 2019, C#, MVC5, ASP.NET, ADO.NET, VB.NET, XML, TFS, Azure DevOps, HTML, CSS, .NET 4.7.1, LINQ, TOAD, IIS 7.5, Java Script, AJAX, jQuery, JSON, Bootstrap, SSRS, SSIS, SQL Server 2008 and Oracle 11g, 19c.
 
-|**Client:  GEICO, Chevy Chase, MD | **     Sr. Software Developer**| **June’11 to Mar’12**  |                                    
- | - | - | - | 
-	  
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**GEICO, Chevy Chase, MD**| **Sr. Software Developer**| **June’11 to Mar’12**  |                                     
 
 
 
@@ -126,8 +127,9 @@ redirect_from:
 
 **Environment:** Visual Studio 2010, C#, ASP.NET, ADO.NET, VB.NET, XML, XPATH, TFS, HTML, CSS, .NET 4.0, Win Forms, VB6, LINQ, SSIS, FTP, TOAD, WCF, IIS 6.0, Java Script, AJAX, JQuery, Oracle 10g and SQL Server 2008.
 
-|**Client:  NRG Energy, Princeton, NJ** | **Sr. Software Developer.**|**Oct’10 to May’11** |
-| - | - | - | 
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**NRG Energy, Princeton, NJ** | **Sr. Software Developer.**|**Oct’10 to May’11** |
 
 
 **Project: Bloomberg Credit Rating** is used to analyze Credit Risk and to automate the LIBOR & and Fed Funds interest rate curves used for interest payments on NRG’s counterparties posted collateral by downloading the Financial, Income Statement information and Credit Interest Rates with the use of Bloomberg Data Services.
@@ -147,8 +149,9 @@ redirect_from:
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, TFS, HTML, CSS, Win Forms, Excel VSTO, Excel-VBA, Java Script, SQL 2005, SSIS, DTS, .NET 3.5, FTP, AJAX, TOAD, IIS 6.0 and Oracle 10g.
 
-|**Client:  Verizon, Piscataway, NJ** | **Lead Developer**|**Aug’09 to Sep’10** |
-| - | - | - | 
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**Verizon, Piscataway, NJ** | **Lead Developer**|**Aug’09 to Sep’10** |
 
 
 Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application used to correct a misaligned relationship between Data BAN, Video Circuit ID, Voice CAN, and uCSR profile CAN (PCAN).  A misaligned relationship can lead to order and billing fallouts. The tool will relay all the changes to the RIBS billing system.
@@ -166,9 +169,11 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Setup and Deployment of the build, and configuration settings.
 - Involved in Nunit case Testing & and preparing the MAC documents.
 
-**Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, TFS, HTML, Win Forms, VB6, Java Script, SQL 2008, SSIS, IIS 6.0, AJAX, jQuery, .NET 3.5,   WCF, and BizTalk Server 2006     
-|**Client:  Fidelity National Financial, INC PITTSBURGH, PA** | **Sr. Software Developer**|**Jan’08 to July’09** |
-| - | - | - | 
+**Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, TFS, HTML, Win Forms, VB6, Java Script, SQL 2008, SSIS, IIS 6.0, AJAX, jQuery, .NET 3.5,   WCF, and BizTalk Server 2006    
+
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**Fidelity National Financial, INC PITTSBURGH, PA** | **Sr. Software Developer**|**Jan’08 to July’09** |
 
 
 **Project: AssetLinkLP (Nationwide Provider of Mortgage Default Services)** is a web-based application used for the management and marketing of bank-owned properties and is developed to manage every level of the REO process from investor relations, acquisition of the asset, eviction, pre-marketing, marketing, negotiating, and closing.
@@ -187,8 +192,9 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 
 **Environment:** Visual Studio 2008, C#, ASP.NET, ADO.NET, VB.NET, XML, Web Services, LINQ, XSLT, VSS, HTML, JavaScript, SQL 2005, SSRS, SMTP, Visio, AJAX, IIS 6.0, Crystal Reports 9.0, JQuery, SCRUM, VB6, UML and BizTalk Server 2006.
 
-|**Client:  CT State Elections Enforcement Commission, CT** | **Sr. Software Developer**|**Aug’07 to Jan’08** |
-| - | - | - | 
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**CT State Elections Enforcement Commission, CT** | **Sr. Software Developer**|**Aug’07 to Jan’08** |
 
 
 **Project: eCRIS** (Campaign Financial Information Reporting System) is the State Election Enforcement Commission's (SEEC) online database of electronically filed campaign finance reports and registration information of all candidates and committees established in Connecticut. 
@@ -203,9 +209,10 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Involved in writing various Stored Procedures, and T-SQL statements in SQL Server 2005 & Oracle 10g.
 
 **Environment:** Visual Studio 2005, ASP.NET 2.0, C#.NET, ADO.NET, XML, Web Services, JavaScript, XSLT, Windows Services, CSS, VSS, TFS, SSRS, UML, MVC, Oracle, SQL Server 2005	
-                                                                         
-|**Client:  The Hartford Insurance, Hartford CT** | **Sr. Software Developer**|**Nov’06 to July’07** |
-| - | - | - | 
+
+|**Client** |**Role** |**Duration**|  
+| - | - | - |									 
+|**The Hartford Insurance, Hartford CT** | **Sr. Software Developer**|**Nov’06 to July’07** |
 
 **Project: HartSource** is the financial service product that provides the life insurance of Business Investment for Small and large Commercial businesses. Aries Loss Control and Renewal Download are the core interfaces run to facilitate the services to Hart source. These applications (interfaces) were implemented using .Net Technologies.  
 
@@ -218,8 +225,9 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 
 **Environment:** Visual Studio 2005, VB .NET, ASP.NET, ADO.NET, COM, VB6, UML, Excel-VBA, VSTO, Oracle 9i and MS Access.  
 
-|**Client:  Bluespring Software, Cincinnati, OH** | **Sr. Software Developer**|**Jan’06 to Oct’06** |
-| - | - | - |                 
+|**Client** |**Role** |**Duration**|  
+| - | - | - |
+|**Bluespring Software, Cincinnati, OH** | **Sr. Software Developer**|**Jan’06 to Oct’06** |            
 
 
 **Project: Active Directory Activities** is to create the Active Directory Web Services (Create, Retrieve, Update, and Delete Active Directory Web Services) and Get File Activity Web Service for Bluespring's BPM Suite.
@@ -234,9 +242,9 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 
 **Environment:** Windows 2003, VS.NET2005, C#.NET, VB 6.0, XML, XSD, Web Services, DOM, IIS 5.0, VSS, VBScript and Infragistics.
 
-                                              
-|**Client:  Syscom Technologies, Atlanta, GA** | **Software Developer**|**Feb’04 to Dec’05** |
-| - | - | - |  
+|**Client** |**Role** |**Duration**|  
+| - | - | - |                                              
+|**Syscom Technologies, Atlanta, GA** | **Software Developer**|**Feb’04 to Dec’05** |
                                                           
 **Project# 1: Service Management** is a product-based project in line with the Sales Module of **Microsoft Navision Axapta3.0** ERP package. This project allows the service company to manage the service process and is a Smart Client application built using the Windows Forms classes of the Microsoft .Net Framework and XML Web Services. This module deals with taking service orders from the client and allows users to view, modify, and add projects and tasks that are shared with other users.
 

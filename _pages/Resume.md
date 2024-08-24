@@ -37,12 +37,12 @@ redirect_from:
 **Education**                                                                                                                                                                                                                                                                                                                                                                                                                                             
 * |**Master of Professional Studies in Geographic Information Systems (GIS)**|**UMBC, USA**|
   | - | - |
-* |**Bachelor of Technology** **(Computer Science & Engineering)**|**JNTU India**|
+* |**Bachelor of Technology** **(Computer Science & Engineering)**|**JNTU, India**|
   | - | - |
 **Certifications**                                                                                                                                                                                                                       
 
-* |**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.    (MCP ID: 3633414)**|
-  | - |
+* |**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.**|**(MCP ID: 3633414)**|
+  | - | - |
   
 **Technical Skills**                                                                                                                                                                                                                 
 

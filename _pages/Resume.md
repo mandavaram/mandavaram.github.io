@@ -35,14 +35,15 @@ redirect_from:
 - Responsible for the Creation of **T-SQL**, **PL/SQL**, Stored Procedures, DTS, **SSIS**, SSAS, SSRS, etc.
 
 **Education**                                                                                                                                                                                                                                                                                                                                                                                                                                             
-* |**Master of Professional Studies in Geographic Information Systems (GIS)**|**UMBC, USA**|
-  | - | - |
-* |**Bachelor of Technology** **(Computer Science & Engineering)**|**JNTU, India**|
-  | - | - |
+|**Master of Professional Studies in Geographic Information Systems (GIS)**|**UMBC, USA**|
+| - | - |
+|**Bachelor of Technology** **(Computer Science & Engineering)**|**JNTU, India**|
+
+  
 **Certifications**                                                                                                                                                                                                                       
 
-* |**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.**|**(MCP ID: 3633414)**|
-  | - | - |
+|**M**icrosoft **C**ertified **A**pplication **D**eveloper **(MCAD) in VB.NET.**|**(MCP ID: 3633414)**|
+| - | - |
   
 **Technical Skills**                                                                                                                                                                                                                 
 

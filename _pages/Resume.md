@@ -44,20 +44,20 @@ redirect_from:
   
 **Technical Skills**                                                                                                                                                                                                                 
 
-|**Specialization** |**:**|ASP.NET, C#.NET, VB.NET, ADO.NET, VB6, VBScript, JavaScript, XML, SQL Server, SSIS, SSRS, Oracle, XSLT, XSD, Win/ Web Forms, Web/ Windows Services, .Net Remoting, VSTO, RStudio, Visual Studio .NET 2005/2008/2010/2012/2017/2019, and .Net Framework 1.1/2.0/3.0/3.5/4.0/4.5/4.6.1/4.7.1.|
-| - | - | - |
-|GUI/Front End	 |**:**|ASP.NET, VB.NET, Visual Basic 6.0, VC++, ASP, VBA, XUL, WCF, VSTO.|
-|Markup Languages|**:**|HTML, DHTML, XAML, XML, CSS, XSL.|
-|Scripting Languages|**:**|VBScript, Java Script, VB, PHP, ASP, Python, and R script.|
-|Web Servers|**:**|IIS 5.0/6.0/7.5.|
-|Databases                             |**:**|MS SQL Server 6.5/2k/2005/2008, Oracle 8i/9i/10g/11g/19c, MS Access, DB2. |
-|Database Connections|**:**|ADO.NET, OLEDB, ODBC, ADO 2.0, ODP.NET.|
-|Middleware |**:**|ActiveX Controls, OLE, COM, DCOM.|
-|Programming Languages |**:**|C, C++, C#, Java, VB.NET, and C# .NET.|
-|Reporting Tools |**:**|Crystal Reports 9.0/13.0, Data Reports, MS Reports, SSRS, and Power BI Reports. 	|
-|Presentation Tools|**:**|MS Visio, MS PowerPoint, MS Word, Photoshop, MS Excel, MVC, UML.|
-|Operating Systems |**:**|DOS, Windows 9x/XP/2000/2003, Unix.|
-|Tools|**:**|VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps. ESRI's ArcGIS Desktop/Online/Pro software and ArcMap|
+|Specialization      |ASP.NET, C#.NET, VB.NET, ADO.NET, VB6, VBScript, JavaScript, XML, SQL Server, SSIS, SSRS, Oracle, XSLT, XSD, Win/ Web Forms, Web/ Windows Services, .Net Remoting, VSTO, RStudio, Visual Studio .NET 2005/2008/2010/2012/2017/2019, and .Net Framework 1.1/2.0/3.0/3.5/4.0/4.5/4.6.1/4.7.1.|
+| - | - |
+|GUI/Front End	         |ASP.NET, VB.NET, Visual Basic 6.0, VC++, ASP, VBA, XUL, WCF, VSTO.|
+|Markup Languages        |HTML, DHTML, XAML, XML, CSS, XSL.|
+|Scripting Languages|VBScript, Java Script, VB, PHP, ASP, Python, and R script.|
+|Web Servers|IIS 5.0/6.0/7.5.|
+|Databases                             |MS SQL Server 6.5/2k/2005/2008, Oracle 8i/9i/10g/11g/19c, MS Access, DB2. |
+|Database Connections|ADO.NET, OLEDB, ODBC, ADO 2.0, ODP.NET.|
+|Middleware |ActiveX Controls, OLE, COM, DCOM.|
+|Programming_Languages |C, C++, C#, Java, VB.NET, and C# .NET.|
+|Reporting Tools |Crystal Reports 9.0/13.0, Data Reports, MS Reports, SSRS, and Power BI Reports. 	|
+|Presentation Tools|MS Visio, MS PowerPoint, MS Word, Photoshop, MS Excel, MVC, UML.|
+|Operating Systems |DOS, Windows 9x/XP/2000/2003, Unix.|
+|Tools|VSS, BPM Suite, TOAD, Infragistics, Telerik, CruiseContol.NET, TFS, SSIS, DTS, CSLA, Perforce, BizTalk Server, and Azure DevOps. ESRI's ArcGIS Desktop/Online/Pro software and ArcMap|
 
 **Professional Experience:**
 

@@ -10,11 +10,6 @@ redirect_from:
 {% include base_path %}
 ---------------
 
-
-|**RAMBABU MANDAVA**  <br> **Phone: 484-362-8580**  <br>    |                                                               ![MicrosoftCertification](/Microsoft_Certification.png)|
-| - | - |
-|**E-mail: mandava.rambabu@gmail.com** | |
-
 <table style="width:100%">
   <tr>
     <td width='75%'><strong>RAMBABU MANDAVA <br> Phone: 484-362-8580 <br> E-mail: mandava.rambabu@gmail.com </strong></td>

@@ -15,6 +15,13 @@ redirect_from:
 | - | - |
 |**E-mail: mandava.rambabu@gmail.com** | |
 
+<table style="width:100%">
+  <tr>
+    <td width='75%'><strong>RAMBABU MANDAVA <br> Phone: 484-362-8580 <br> E-mail: mandava.rambabu@gmail.com </strong></td>
+    <td width='25%'><img src='/images/Microsoft_Certification.png'></td>
+  </tr>
+</table>
+
 # Professional Summary                                                                                                                                                                                                                                                                                                                                                                                                                  
 - 20+ Years of software life cycle experience in developing Internet, Intranet, Client/Server, and Object-oriented applications using **Microsoft Technologies** on the Microsoft Windows platform.
 - Experience in working with all versions of **Visual Studio.NET** and **Microsoft .NET Framework**.

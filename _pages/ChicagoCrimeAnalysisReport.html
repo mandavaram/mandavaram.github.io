@@ -646,19 +646,19 @@ td, th {
 				The crime rate with respect to time of day, day of week and month, depicts which crime happens the most and at what time. Observation says that higher crime intensity is between the duration 12:00PM – 18:00PM. To dive deeper into the data, we focused on only the 4 major types of crimes and grouped the rest into others, that gave us 5 broad categories of crime types. We did breakdown the crimes by location of crime scene, h of the day, weekday and month as depicted, to see if we can spot any trends. We have plotted normalized crime types for each category.
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:14.45pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="chicagocrimeanalysisreport-1.png" width="583" height="431" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-1.png" width="583" height="431" alt="" />
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:19.75pt; text-indent:0pt; text-align:left; line-height:110%; font-size:11pt">
 				<span style="width:44.91pt; display:inline-block">&#xa0;</span><span style="line-height:110%; font-size:10pt">Figure 1: Crime Trend Analysis</span><span style="width:73.46pt; line-height:110%; font-size:10pt; display:inline-block">&#xa0;</span><span style="line-height:110%; font-size:10pt">Figure 2: Crime Occurrence Rate V/s Crime Type</span>
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:14.3pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="chicagocrimeanalysisreport-2.png" width="583" height="333" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-2.png" width="583" height="333" alt="" />
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:6.9pt; text-indent:0pt; text-align:left; line-height:110%; font-size:10pt">
 				Figure 3: Crime Occurrence Rate V/s Scene of Crime<span style="width:23.73pt; display:inline-block">&#xa0;</span>Figure 4: Crime occurrence rate V/s Time of Crime
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:1.5pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-3.png" width="555" height="388" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-3.png" width="555" height="388" alt="" />
 			</p>
 			<p style="margin-right:0pt; margin-left:0.5pt; margin-bottom:0.3pt; text-align:right; line-height:110%; font-size:10pt">
 				&#xa0;
@@ -673,7 +673,7 @@ td, th {
 				&#xa0;
 			</p>
 			<p style="margin-right:0pt; margin-left:106.3pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-4.jpeg" width="267" height="189" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-4.png" width="267" height="189" alt="" />
 			</p>
 			<p style="margin-right:0pt; margin-left:43.5pt; margin-bottom:26.65pt; text-align:left; line-height:110%; font-size:10pt">
 				Figure 7: Heat-map of top 5 most dangerous communities w.r.t crime occurrence
@@ -697,7 +697,7 @@ td, th {
 				Then explored all 60 indicator variables and must see whether any of them will be good to judge whether a crime is severe or not. From all of those, we could see some indicator variables are good to for classification.
 			</p>
 			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-5.jpeg" width="567" height="388" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-5.png" width="567" height="388" alt="" />
 			</p>
 			<h3 style="margin-left:0pt; text-indent:0pt">
 				Figure 8: Analysis of Indicator Variables(features)
@@ -724,7 +724,7 @@ td, th {
 				For any classification problem, there is always a Baseline Model: classify everything as the class that occurs most frequently. In case, the two classes have comparable percentage. The "severe" crime accounts for 46% of the total crime, while the "non_severe" is around 53%. As a result, if we use classification accuracy as the only criteria to judge whether a model is good or not, a good model should at least have the baseline accuracy of 54%. We considered other different classifiers: Logistic regression with Lasso-based feature selection, Linear SVM, Decision tree, Naive Bayes model, Random forest, KNN. We divided data into a training set and a test set, built different classifiers using the training set, and examined the accuracy of all the classifiers using the test set.
 			</p>
 			<p style="margin-right:0pt; margin-left:88.1pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-6.jpeg" width="316" height="328" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-6.png" width="316" height="328" alt="" />
 			</p>
 			<h3 style="margin-right:25.8pt; margin-left:0pt; text-indent:0pt">
 				Figure 14: Testing Accuracies of Binary Classification
@@ -733,7 +733,7 @@ td, th {
 				Based on the accuracy comparison of different models, all the classifiers we tried beat the baseline model, and some perform better than the others. For example, the best classifier is the logistic regression classifier and can reach an accuracy around 63%. The decision tree and random forest also works well. We also identified important factors determining whether a crime is severe or not based on coefficients. The most important features are all indicator variables describing the exact location of the crime, for example if it happened in a department store, it’s most likely not going to be something big, and probably will be things like theft. These features are consistent with what we plot above before we set up the model.
 			</p>
 			<p style="margin-right:0pt; margin-left:100.3pt; margin-bottom:15.15pt; text-indent:0pt; text-align:left; line-height:108%">
-				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-7.jpeg" width="283" height="348" alt="" />
+				<img src="/images/chicagocrimeanalysisreport-7.png" width="283" height="348" alt="" />
 			</p>
 			<p style="margin-right:93.75pt; margin-left:100.8pt; margin-bottom:18.3pt; text-align:left; line-height:110%; font-size:10pt">
 				Figure 15: Testing Accuracies of Multi-class Classification

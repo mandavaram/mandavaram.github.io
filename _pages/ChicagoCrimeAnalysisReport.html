@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { text-indent:-0.5pt; text-align:justify; line-height:168%; font-family:Calibri; font-size:9pt }
+			h1, h2, h3, p { margin:0pt 42.25pt 5pt 19.45pt }
+			li, table { margin-top:0pt; margin-bottom:5pt }
+			h1 { margin-left:19.45pt; margin-bottom:9.1pt; text-indent:-0.5pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Calibri; font-size:14.5pt; font-weight:normal; color:#000000 }
+			h2 { margin-left:19.45pt; margin-bottom:8.95pt; text-indent:-0.5pt; page-break-inside:avoid; page-break-after:avoid; line-height:108%; font-family:Calibri; font-size:12pt; font-weight:normal; color:#000000 }
+			h3 { margin-right:23.35pt; margin-left:0.5pt; margin-bottom:26.1pt; text-indent:-0.5pt; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:125%; font-family:Calibri; font-size:10pt; font-weight:normal; color:#000000 }
+			span.Heading1Char { font-family:Calibri; font-size:14.5pt; color:#000000 }
+			span.Heading2Char { font-family:Calibri; font-size:12pt; color:#000000 }
+			span.Heading3Char { font-family:Calibri; font-size:10pt; color:#000000 }
+			.awlist1 { list-style:none; counter-reset:awlistcounter4_0 }
+			.awlist1 > li:before { content:'[' counter(awlistcounter4_0) ']'; counter-increment:awlistcounter4_0 }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<p style="margin-right:23.35pt; margin-left:0pt; margin-bottom:8.9pt; text-indent:0pt; text-align:center; line-height:108%; font-size:17pt">
+				Chicago Crime Analysis and Prediction
+			</p>
+			<p style="margin-right:23.35pt; margin-left:0pt; margin-bottom:11.95pt; text-indent:0pt; text-align:center; line-height:108%; font-size:12pt">
+				&#xa0;
+			</p>
+			<p style="margin-right:23.35pt; margin-left:0pt; margin-bottom:11.95pt; text-indent:0pt; text-align:center; line-height:108%">
+				Abstract
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.2pt; margin-bottom:27.45pt; text-indent:13.45pt">
+				The main objective of project is to anticipate if a neighborhood in the city, at a given duration of the day will be a crime hotspot or not, with an acceptable rate of accuracy.&#xa0; research aims to exploit background criminal knowledge procured from Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. The analysis is further extended to incorporate the impact of housing and inhabitation, literacy rate, employment and socioeconomic status on the crime occurrence rate.
+			</p>
+			<h1 style="margin-right:0pt; margin-left:39.7pt; text-indent:-21.5pt; text-align:left">
+				1<span style="width:14.15pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Problem Statement
+			</h1>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0.1pt">
+				The number of crimes in Chicago increase, more and more people care about their safety, and the government leader want to build a good environment to the citizens. Therefore, it is required to predict the occurrence of a crime at a location at a specific time of a day and to anticipate if a particular neighborhood in the city, at any given duration of the day will be a crime hotspot or not, with an acceptable rate of accuracy. Furthermore, to incorporate the impact of housing and inhabitation, literacy rate, employment and socioeconomic status [<span style="color:#0000ff">1</span>] on the crime occurrence
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:20.65pt">
+				rate.
+			</p>
+			<h1 style="margin-right:0pt; margin-left:39.7pt; text-indent:-21.5pt; text-align:left">
+				2<span style="width:14.15pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Proposed Approach
+			</h1>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0pt">
+				Chicago, Illinois ranks third in the United States in population (2.7 million), second in the categories of total murders, robberies, aggravated assaults, property crimes, and burglaries, and first in total motor vehicle thefts [<span style="color:#0000ff">3</span>]. In addition to its large population and high crime rates, Chicago maintains a rich data portal containing, among other things, a complete listing of crimes documented by the Chicago Police Department [<span style="color:#0000ff">2</span>]. Have procured criminal records from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. Table 1 depicts the attributes considered by system model and is referred to as the dataset.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				&#xa0;
+			</p>
+			<table style="width:404.58pt; margin-left:4.75pt; margin-bottom:0pt; border:0.88pt solid #000000; border-collapse:collapse">
+				<tr style="height:12.9pt">
+					<td style="width:85.95pt; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Variable
+						</p>
+					</td>
+					<td style="width:308.6pt; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Description
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							ID
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Unique identifier for the record.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Case Number
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The Chicago Police Department RD Number (Records Division Number), which is unique to the incident.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Date
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Date when the incident occurred. this is sometimes a best estimate.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Block
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The partially redacted address where the incident occurred, placing it on the same block as the actual address.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							IUCR
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The Illinois Uniform Crime Reporting code. This is directly linked to the Primary Type and Description.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Primary Type
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The primary description of the IUCR code.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Description
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The secondary description of the IUCR code, a subcategory of the primary description.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; line-height:108%; font-size:10pt">
+							Location Description
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Description of the location where the incident occurred
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Arrest
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Indicates whether an arrest was made.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Domestic
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Indicates whether the incident was domestic-related as defined by the Illinois Domestic Violence Act.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:48.65pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Beat
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:98%; font-size:10pt">
+							Indicates the beat where the incident occurred. A beat is the smallest police geographic area – each beat has a dedicated police beat car. Three to five beats make up a police sector, and three sectors make up a police district.
+						</p>
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The Chicago Police Department has 22 police districts.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							District
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Indicates the police district where the incident occurred.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Ward
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The ward (City Council district) where the incident occurred.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Community Area
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Indicates the community area where the incident occurred. Chicago has 77 community areas.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:24.75pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							FBI Code
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Indicates the crime classification as outlined in the FBI’s National IncidentBased Reporting System (NIBRS).
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36.7pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							X Coordinate
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The x coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36.7pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Y Coordinate
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The y coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Year
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Year the incident occurred.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Updated On
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Date and time the record was last updated.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36.7pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Latitude
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The latitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36.7pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Longitude
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The longitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block.
+						</p>
+					</td>
+				</tr>
+				<tr style="height:48.55pt">
+					<td style="width:85.95pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; padding-top:1.95pt; padding-right:0.99pt; padding-left:1.86pt; vertical-align:middle; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Location
+						</p>
+					</td>
+					<td style="width:308.6pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; padding-top:1.95pt; padding-right:1.86pt; padding-left:0.99pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:2.95pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal. This location is shifted from the actual location for partial redaction but falls on the same block.
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:23.35pt; margin-left:0.5pt; margin-bottom:18.75pt; text-align:center; line-height:125%; font-size:10pt">
+				Table 1: Attributes of crime-data provided by the Chicago Police Department
+			</p>
+			<h2 style="margin-right:0pt; margin-left:45.1pt; text-indent:-26.9pt; text-align:left">
+				2.1<span style="width:11.71pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Classification
+			</h2>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				In this project, perform data modeling using classification models or classifiers. There are mainly two types classification-Binary and Multiclass. Binary classification is the task of classifying the elements of a given set into two groups (predicting which group each one belongs to) based on a classification rule. 
+			</p>
+			<table style="width:339.68pt; margin-left:37.2pt; margin-bottom:0pt; border:0.88pt solid #000000; border-collapse:collapse">
+				<tr style="height:12.7pt">
+					<td style="width:151.3pt; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Theft
+						</p>
+					</td>
+					<td style="width:145.55pt; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Battery
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Robbery
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Criminal Damage
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Deceptive Practice
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Narcotics
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Domestic Violence
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:7.95pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:center; line-height:108%; font-size:10pt">
+							Non-Criminal (Subject Specified)
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Assault
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Criminal Trespass
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Gambling
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Arson
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Burglary
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Prostitution
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:11.05pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:center; line-height:108%; font-size:10pt">
+							Concealed Carry License Violation
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Human Trafficking
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Motor Vehicle Theft
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Weapons Violation
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Homicide
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Offense involving Children
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Crime Sexual Assault
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Sex Offense
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Obscenity
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Non-Criminal
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Liquor Law Violation
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Interference with Public Officer
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Kidnapping
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Public Peace Violation
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.8pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Intimidation
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; border-bottom:0.88pt solid #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffe6e6">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Stalking
+						</p>
+					</td>
+				</tr>
+				<tr style="height:12.7pt">
+					<td style="width:151.3pt; border-top:0.88pt solid #000000; border-right:2.62pt double #000000; padding-top:1.95pt; padding-right:4.44pt; padding-left:14.81pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Public Indecency
+						</p>
+					</td>
+					<td style="width:145.55pt; border-top:0.88pt solid #000000; border-left:2.62pt double #000000; padding-top:1.95pt; padding-right:5.31pt; padding-left:13.94pt; vertical-align:top; background-color:#ffeded">
+						<p style="margin-right:0pt; margin-left:1.55pt; margin-bottom:0pt; text-indent:0pt; text-align:left; line-height:108%; font-size:10pt">
+							Ritualism
+						</p>
+					</td>
+				</tr>
+			</table>
+			<h3 style="margin-left:0pt; margin-bottom:15.2pt; text-indent:0pt">
+				Table 2: Classification of crimes
+			</h3>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:6.95pt">
+				In machine learning, multiclass or multinomial classification is the problem of classifying instances into one of three or more classes. (Classifying instances into one of the two classes is called binary classification). Here we apply various types of classifiers to model dataset and compare their accuracies. Following are the methods we applied for classification:
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Logistic Regression
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt">
+				The binary logistic model is used to estimate the probability of a binary response based on one or more predictor (or independent) variables (features). It allows one to say that the presence of a risk factor increases the odds of a given outcome by a specific factor.
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Linear SVM
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt">
+				Support vector machines (SVMs) are a set of supervised learning methods which learn from the dataset and used for classification. Given a set of training examples, each marked as belonging to one of two classes, an SVM algorithm builds a model that predicts whether a new example falls into one class or the other.
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Decision Tree
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt">
+				Decision tree learning uses a decision tree (as a predictive model) to go from observations about an item (represented in the branches) to conclusions about the item’s target value (represented in the leaves). It is one of the predictive modeling approaches used in statistics, data mining and machine learning. In data mining, a decision tree describes data (but the resulting classification tree can be an input for decision making).
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Naive Bayes model
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt; margin-bottom:0pt">
+				Naive Bayes is a classification algorithm for binary (two-class) and multi-class classification problems. The technique is easiest to understand when described using binary or categorical input
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt; line-height:108%">
+				values.
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Random Forest
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt">
+				Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. Random decision forests correct for decision trees’ habit of over fitting to their training set.
+			</p>
+			<p style="margin-right:0pt; margin-left:40.1pt; margin-bottom:6.75pt; text-indent:-9.6pt; text-align:left; line-height:108%">
+				<span style="font-family:Cambria">•</span><span style="width:5.61pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>kNN
+			</p>
+			<p style="margin-right:41.5pt; margin-left:41.35pt; margin-bottom:27.45pt">
+				kNN is considered among the oldest non-parametric classification algorithms. To classify an unknown example, the distance from that example to every other training example is measured. The k smallest distances are identified, and the most represented class by these k nearest neighbors is considered the output class label.
+			</p>
+			<h1 style="margin-right:0pt; margin-left:39.7pt; margin-bottom:15.6pt; text-indent:-21.5pt; text-align:left">
+				3<span style="width:14.15pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Technical details of proposed approach
+			</h1>
+			<h2 style="margin-right:0pt; margin-left:45.1pt; text-indent:-26.9pt; text-align:left">
+				3.1<span style="width:11.71pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Data Preprocessing
+			</h2>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0pt">
+				In this part, involved in clean up the crime dataset obtained from the city of Chicago data portal. In project, used the most recent data from year of 2015 to 2018 from the Chicago crime dataset, instead of using the whole dataset which contains 6 million records back to year 2001. 
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:11.6pt; line-height:108%">
+				Cleaned up the data as below:
+			</p>
+			<ol style="margin:0pt; padding-left:0pt">
+				<li style="margin-right:41.5pt; margin-left:40.85pt; text-indent:0pt">
+					Excluded records with vague information
+				</li>
+				<li style="margin-right:41.5pt; margin-left:40.85pt; margin-bottom:11.45pt; text-indent:0pt">
+					Removed extremely rare crime types and locations 
+				</li>
+				<li style="margin-right:41.5pt; margin-left:40.85pt; text-indent:0pt">
+					Converted categorical features to dummy (indicator) variables for classification
+				</li>
+				<li style="margin-right:41.5pt; margin-left:40.85pt; text-indent:0pt">
+					Extracted the time information and converted categorical features to dummy variables 
+				</li>
+				<li style="margin-right:41.5pt; margin-left:40.85pt; text-indent:0pt">
+					Added an extra feature "distance to closest police station"
+				</li>
+				<li style="margin-right:41.5pt; margin-left:40.85pt; margin-bottom:19.45pt; text-indent:0pt">
+					Integrated socioeconomic status of the neighborhood where the crime happened.
+				</li>
+			</ol>
+			<h2 style="margin-right:0pt; margin-left:45.1pt; text-indent:-26.9pt; text-align:left">
+				3.2<span style="width:11.71pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Data Exploration
+			</h2>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:8.4pt">
+				In this part, we visualized the data using different ways. Analyzed trend of crime occurrence for each year (figure 1). Then, plotted crime occurrence rates of the following: crime type, scene of crime, h-day-month of crime (figures 2-6). This gives us a better understanding of the major crimes that occur. We interpret that theft has the highest percentage and is the crime type with the highest crime rate. We also identified locations that are more prone to crimes, street being the scene with highest crime rate.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				The crime rate with respect to time of day, day of week and month, depicts which crime happens the most and at what time. Observation says that higher crime intensity is between the duration 12:00PM – 18:00PM. To dive deeper into the data, we focused on only the 4 major types of crimes and grouped the rest into others, that gave us 5 broad categories of crime types. We did breakdown the crimes by location of crime scene, h of the day, weekday and month as depicted, to see if we can spot any trends. We have plotted normalized crime types for each category.
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:14.45pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-1.png" width="583" height="431" alt="" />
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:19.75pt; text-indent:0pt; text-align:left; line-height:110%; font-size:11pt">
+				<span style="width:44.91pt; display:inline-block">&#xa0;</span><span style="line-height:110%; font-size:10pt">Figure 1: Crime Trend Analysis</span><span style="width:73.46pt; line-height:110%; font-size:10pt; display:inline-block">&#xa0;</span><span style="line-height:110%; font-size:10pt">Figure 2: Crime Occurrence Rate V/s Crime Type</span>
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:14.3pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-2.png" width="583" height="333" alt="" />
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:6.9pt; text-indent:0pt; text-align:left; line-height:110%; font-size:10pt">
+				Figure 3: Crime Occurrence Rate V/s Scene of Crime<span style="width:23.73pt; display:inline-block">&#xa0;</span>Figure 4: Crime occurrence rate V/s Time of Crime
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:1.5pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-3.png" width="555" height="388" alt="" />
+			</p>
+			<p style="margin-right:0pt; margin-left:0.5pt; margin-bottom:0.3pt; text-align:right; line-height:110%; font-size:10pt">
+				&#xa0;
+			</p>
+			<p style="margin-right:0pt; margin-left:0.5pt; margin-bottom:0.3pt; text-align:right; line-height:110%; font-size:10pt">
+				Figure 6: Crime occurrence rate V/s Month of Crime
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:10.55pt; text-indent:0pt; text-align:left; line-height:110%; font-size:10pt">
+				Figure 5: Crime Occurrence Rate V/s Day of Crime
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:15.1pt; text-indent:0pt; text-align:left; line-height:108%">
+				&#xa0;
+			</p>
+			<p style="margin-right:0pt; margin-left:106.3pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-4.jpeg" width="267" height="189" alt="" />
+			</p>
+			<p style="margin-right:0pt; margin-left:43.5pt; margin-bottom:26.65pt; text-align:left; line-height:110%; font-size:10pt">
+				Figure 7: Heat-map of top 5 most dangerous communities w.r.t crime occurrence
+			</p>
+			<h2 style="margin-right:0pt; margin-left:45.1pt; text-indent:-26.9pt; text-align:left">
+				3.3<span style="width:11.71pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Data Modeling
+			</h2>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:15.9pt">
+				In this part, tried to build two types of models, binary classification model for predicting whether a crime is severe or not, and multi-class classification model to determine the exact type of crime.
+			</p>
+			<h3 style="margin-right:0pt; margin-left:48.1pt; margin-bottom:11.55pt; text-indent:-29.9pt; text-align:left; line-height:108%">
+				3.3.1<span style="width:9.65pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Binary Classification
+			</h3>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:8.4pt">
+				Goal is predicting severity of the crime, so dropped the exact crime type for that point. These are the features that required normalization: Latitude, Longitude, closest_station. Other features for dataset are all categorical data and have all been converted to dummy variables (District, Time_block, Weekday, Location description). Performed split on the 80000 sample records, into training set and test set, and normalized by themselves.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0pt">
+				We can see the latitude and longitude info may be helpful for classification. For example, if the latitude is low, it’s more likely that severe crime will happen. This is consistent with the fact that the safety at south Chicago is notoriously bad. The economic, unemployment, age status do provide expected result. For example, for regions with lower income and higher unemployment rate, the crimes are going to be more severe.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0pt">
+				Then explored all 60 indicator variables and must see whether any of them will be good to judge whether a crime is severe or not. From all of those, we could see some indicator variables are good to for classification.
+			</p>
+			<p style="margin-right:0pt; margin-left:0pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-5.jpeg" width="567" height="388" alt="" />
+			</p>
+			<h3 style="margin-left:0pt; text-indent:0pt">
+				Figure 8: Analysis of Indicator Variables(features)
+			</h3>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:15.9pt">
+				For example, if the time block is 3am to 6am, the proportion of severe crime is obviously higher, which is not the case in time block 9am to 12pm. If the crime takes place in an apartment or house, it’s more likely to be a severe crime, while if the crime takes place on a street where everyone can see, it’s less likely going to be severe.
+			</p>
+			<h3 style="margin-right:0pt; margin-left:48.1pt; margin-bottom:11.55pt; text-indent:-29.9pt; text-align:left; line-height:108%">
+				3.3.2<span style="width:9.65pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Multiclass Classification
+			</h3>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				In addition to the above classification, we move down to multi-classification. The goal here is to classify each record into specific type of crimes. We first cleaned up the data as the response variable specifically needs to be transformed into numpy array. Another very important thing is that we have 25 classes of crimes.&#xa0; current computational resce does not allow us to do multiclass classification at this scale. Therefore, we here only picked up top f types of crimes. We only maintained these types of crimes: THEFT, BATTERY, CRIMINAL DAMAGE, NARCOTICS, that we are interested in classifying and assigned an integer identifier to them. We split the data into training and testing sets as explained above.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				&#xa0;
+			</p>
+			<h1 style="margin-right:0pt; margin-left:39.7pt; margin-bottom:15.6pt; text-indent:-21.5pt; text-align:left">
+				4<span style="width:14.15pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Experiments and Final Analysis
+			</h1>
+			<h2 style="margin-right:0pt; margin-left:45.1pt; text-indent:-26.9pt; text-align:left">
+				4.1<span style="width:11.71pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Binary classification
+			</h2>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:0.05pt">
+				For any classification problem, there is always a Baseline Model: classify everything as the class that occurs most frequently. In case, the two classes have comparable percentage. The "severe" crime accounts for 46% of the total crime, while the "non_severe" is around 53%. As a result, if we use classification accuracy as the only criteria to judge whether a model is good or not, a good model should at least have the baseline accuracy of 54%. We considered other different classifiers: Logistic regression with Lasso-based feature selection, Linear SVM, Decision tree, Naive Bayes model, Random forest, KNN. We divided data into a training set and a test set, built different classifiers using the training set, and examined the accuracy of all the classifiers using the test set.
+			</p>
+			<p style="margin-right:0pt; margin-left:88.1pt; margin-bottom:23.15pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-6.jpeg" width="316" height="328" alt="" />
+			</p>
+			<h3 style="margin-right:25.8pt; margin-left:0pt; text-indent:0pt">
+				Figure 14: Testing Accuracies of Binary Classification
+			</h3>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				Based on the accuracy comparison of different models, all the classifiers we tried beat the baseline model, and some perform better than the others. For example, the best classifier is the logistic regression classifier and can reach an accuracy around 63%. The decision tree and random forest also works well. We also identified important factors determining whether a crime is severe or not based on coefficients. The most important features are all indicator variables describing the exact location of the crime, for example if it happened in a department store, it’s most likely not going to be something big, and probably will be things like theft. These features are consistent with what we plot above before we set up the model.
+			</p>
+			<p style="margin-right:0pt; margin-left:100.3pt; margin-bottom:15.15pt; text-indent:0pt; text-align:left; line-height:108%">
+				<img src="1725238415_chicagocrimeanalysisreport/1725238415_chicagocrimeanalysisreport-7.jpeg" width="283" height="348" alt="" />
+			</p>
+			<p style="margin-right:93.75pt; margin-left:100.8pt; margin-bottom:18.3pt; text-align:left; line-height:110%; font-size:10pt">
+				Figure 15: Testing Accuracies of Multi-class Classification
+			</p>
+			<h1 style="margin-right:0pt; margin-left:39.7pt; text-indent:-21.5pt; text-align:left">
+				5<span style="width:14.15pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>Conclusion
+			</h1>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:8.4pt">
+				In exploratory data analysis, we revealed that several features, for example location of the crime scene and the time of the crime, are associated with the type of crime, providing the basis for out modeling later. For example, crimes happening in department store are more likely to be thefts. Crimes happening at late hours are prone to be violent in nature. One single feature may not be enough for determining the type of crime, but a combination of various features can be powerful. This is indeed the case in modeling. We have also considered Socioeconomic status of Chicago city.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:8.4pt">
+				In&#xa0; modeling, we started with binary classification to determine whether a crime is going to be a severe crime or not, and the result suggests that&#xa0; best models, logistic regression, decision tree and random forest, can reach an accuracy around 63%, beating the baseline model (predicting everything as non-severe) for 8%. The advantage of model over the baseline model is not huge, because severe or not is a definition that is not 100% clear. However, first try has demonstrated that integrating different information, we can do classification of crimes. Additionally, we also revealed features that contribute most to determining whether a crime is severe or not.
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt; margin-bottom:8.4pt">
+				In addition to binary classification, we also tried multiclass classification to determine whether we can accurately classify a crime record into one of the major types of crime: battery, theft, criminal damage and narcotics. The result showed that best multiclass model, logistic regression, reaches a classification accuracy around 50% and beats the baseline model (around 34% accuracy).
+			</p>
+			<p style="margin-right:41.5pt; margin-left:18.7pt">
+				<br style="page-break-before:always; clear:both" />
+			</p>
+			<h1 style="margin-right:0pt; margin-left:18.7pt; text-indent:0pt; text-align:left">
+				References
+			</h1>
+			<ol class="awlist1" style="margin:0pt; padding-left:0pt">
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Chicago data portal - hardship index https://data.cityofchicago.org/health-human-services/hardshipindex/792q-4jtu.
+				</li>
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Clear dataset by chicago police department https://data.cityofchicago.org/public-safety/crimes-2001to-present/ijzp-q8t2.
+				</li>
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Hsinchun Chen, Wingyan Chung, Jennifer Jie Xu, Gang Wang, Yi Qin, and Michael Chau. Crime data mining: a general framework and some examples. <em>computer</em>, 37(4):50–56, 2004.
+				</li>
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Matthew S Gerber. Predicting crime using twitter and kernel density estimation. <em>Decision Support Systems</em>, 61:115–125, 2014.
+				</li>
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Tong Wang, Cynthia Rudin, Daniel Wagner, and Rich Sevieri. Learning to detect patterns of crime. In <em>Joint European Conference on Machine Learning and Knowledge Discovery in Databases</em>, pages 515–530. Springer, 2013.
+				</li>
+				<li style="margin-right:41.5pt; margin-left:33.65pt; text-indent:-15.45pt">
+					<span style="width:5.37pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0; </span>Xiaofeng Wang, Matthew S Gerber, and Donald E Brown. Automatic crime prediction using events extracted from twitter posts. <em>SBP</em>, 12:231–238, 2012.
+				</li>
+			</ol>
+			<div style="clear:both">
+				<p style="margin-right:23.35pt; margin-left:0pt; margin-bottom:0pt; text-indent:0pt; text-align:center; line-height:108%; font-size:10pt">
+					1
+				</p>
+			</div>
+		</div>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+</body>
+</html>

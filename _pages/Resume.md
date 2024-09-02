@@ -268,8 +268,8 @@ Project: PCAN Tool (**PCANTool & NACR Web Services**) is a web-based application
 - Design and Development of Web forms and related code using ASP.Net, VB.Net, **Infragistics** Tools, and XML. 
 - Involved in creating User Controls, Pie Charts, and Cascading Style Sheets.
 - Involved in the Integration of the New Count Process and Sales Order Process modules to **BPM** Suite using Infragistics control development and Web Services.
-- Setup and Deployment** of the build, and configuration settings.						
+- Setup and Deployment of the build, and configuration settings.						
 
-**Environment:**  Windows 2003, VS.NET2003, C#.NET VB.NET, ASP.NET, ADO.NET, XML Web Services, HTML, Java Script, XML, DOM, DHTML, VSS, CSS, IIS 5.0, XSD, BPM Suite, IIS 5.0, VBScript, Infragistics, BPM Suite, VSS, Smart Client Technology, Microsoft MapPoint Technology and SQL Server 2000.
+**Environment:**  Windows 2003, VS.NET2003, C#.NET VB.NET, ASP.NET, ADO.NET, XML Web Services, HTML, Java Script, XML, DOM, DHTML, VSS, CSS, IIS 5.0, VBScript, Infragistics, BPM Suite, VSS, Smart Client Technology, Microsoft MapPoint Technology and SQL Server 2000.
 
 

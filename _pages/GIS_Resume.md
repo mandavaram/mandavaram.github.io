@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "GIS Resume"
+title: "Python/R/.NET & ArcGIS Developer Resume"
 permalink: /GIS_Resume/
 author_profile: true
 redirect_from:

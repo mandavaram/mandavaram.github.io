@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "Resume"
-permalink: /Resume/
+title: "GIS Resume"
+permalink: /GIS_Resume/
 author_profile: true
 redirect_from:
-  - /resume
+  - /GIS_resume
 ---
 
 {% include base_path %}
@@ -65,11 +65,22 @@ redirect_from:
 | - | - | - |
 |**State Highway Administration, Baltimore, MD**|**Sr. Software Developer** |**April’12 to Current**|  
 
-**Project# 1: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.
+**Project# 2: Maryland Statewide Vehicle Crashes & Fatality Analysis**: Analysis of Maryland Statewide vehicle crashes and build a spatial dataset using the data sources approved crash reports. Analysis relating to vehicle crashes (Fatal, Injury & Property damage), and forecasting on how to avoid further crashes is provided in addition to Vehicle Crash Report comparison charts.
 
+**Environment:** ArcGIS Pro and Python Scripts
 
+**Project# 1: Relative housing costs by Census tract, Frederick County, Maryland**: Analysis of housing costs focusing on renters and homeowners in Frederick County, Maryland, looking at U.S. census data at the census tract level. The analysis utilizes U.S. census data at the census tract level, which is a larger geographic unit compared to census block groups and blocks. To gauge housing costs, the study considers two measures: median gross rent as a percentage of household income for renters and median selected housing costs as a percentage of household income for homeowners.
 
-**Project# 2: SIGS**: **State-Issued** **G**arment **S**ystem: This system is used to manage the ordering of uniforms, jackets, and boots for employees of the State Highway Administration.
+**Environment:** R Script & R Studio
+**R Packages:** sp, sf, ggplot2, rgdal, raster
+
+**Responsibilities:**
+- Designed and developed web-based GIS applications using .NET Core, ArcGIS API for Python, and ArcGIS Pro and Online to provide real-time geospatial data analysis and visualization for the users.
+- Built custom Python and R scripts to automate geoprocessing workflows, including spatial analysis, raster manipulation, and data conversion tasks, improving project efficiency.
+- Automated repetitive geoprocessing tasks using Python/ArcPy, significantly reducing manual effort in data preparation for land-use planning projects.
+- Developed interactive web mapping applications using the QGIS2Web plugin and JavaScript libraries (Map box) to visualize spatial data for end users.
+- Used R environment's geospatial packages (sp, sf) to analyze and visualize geospatial data, creating detailed maps and reports for environmental impact studies.
+- Worked closely with multidisciplinary teams to design GIS solutions, provided technical support, and contributed to large-scale geospatial projects.
 
 **Responsibilities:**
 

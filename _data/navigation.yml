@@ -18,5 +18,5 @@ main:
   - title: "Resume"
     url: /Resume/
     
-  #- title: "Guide"
-  #  url: /markdown/
+  - title: "GIS Developer"
+    url: /GISResume/

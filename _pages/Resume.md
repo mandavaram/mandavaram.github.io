@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Resume"
+title: ".NET Resume"
 permalink: /Resume/
 author_profile: true
 redirect_from:

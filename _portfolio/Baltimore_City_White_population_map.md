@@ -1,6 +1,6 @@
 ---
 title: "Analyze Maryland census data & created maps using R scripts"
-excerpt: "<img src='/images/baltimore_white_pop_percent.png'>"
+excerpt: "<img src='/images/baltimore_white_pop_percent.png'> | <img src='/images/baltimore_household_income.png'>"
 collection: portfolio
 ---
 

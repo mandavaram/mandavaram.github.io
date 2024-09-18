@@ -1,6 +1,6 @@
 ---
 title: "Household income value by state in USA"
-excerpt: "Project: <br/><img src='/images/US_Household_Income_plot.png'>"
+excerpt: "<img src='/images/US_Household_Income_plot.png'>"
 collection: portfolio
 ---
 

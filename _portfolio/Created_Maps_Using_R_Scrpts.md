@@ -9,7 +9,7 @@ This is an item in your portfolio. It can be have images or nice text. If you na
 
 <table>
       <tr>
-          <td colspan='2' align='center'><strong>Frederick County housing cost variation Maps of 2017-2021 timeframe</strong></td>
+          <td colspan='2' align='center'><strong>Baltimore City and Howard County data analysis maps</strong></td>
       </tr>       
        <tr>
           <td width='50%'><img src='/images/baltimore_white_pop_percent.png'> </td>

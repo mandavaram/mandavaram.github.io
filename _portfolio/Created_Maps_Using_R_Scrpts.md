@@ -5,7 +5,8 @@ excerpt: "<img src='/images/baltimore_white_pop_percent.png'> | <img src='/image
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+## Project Name: 
+Baltimore City and Howard County data analysis maps
 
 <table>
       <tr>
@@ -20,3 +21,10 @@ This is an item in your portfolio. It can be have images or nice text. If you na
           <td width='50%'><img src='/images/Howard_County_Asian_map.png'> </td>
        </tr>
 </table>
+
+
+## <a href="/_pages/R_Projects.html">Project source code with instructions:</a>
+
+
+## Environment: 
+R Scripts

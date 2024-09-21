@@ -1,9 +1,9 @@
 ---
-title: "Web Map for Italian restaurants near Baltimore area"
+title: "Web Map for Italian Restaurants near Baltimore area"
 excerpt: "Created Web Map with QGIS2Web (QGIS3) for finding Italian restaurants near Baltimore area<br/>
 <br/>
 <img src='/images/Italian_Restaurants_near_Baltimore.png'> | "
-collection: portfolio
+collection: Portfolio
 ---
 
 Web Map URL:

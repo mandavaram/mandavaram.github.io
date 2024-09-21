@@ -1,7 +1,7 @@
 ---
 title: "Chicago Crime Analysis and Prediction"
 excerpt: "<br/><img src='/images/Chicago_Crime_Analysis.png'>"      
-collection: portfolio
+collection: Portfolio
 ---
 
 ## Project Name: 

@@ -1,8 +1,8 @@
 ---
-title: "Analyze Maryland census data & created maps using R scripts"
+title: "Maryland census data analysis & created maps using R scripts"
 excerpt: "<img src='/images/baltimore_white_pop_percent.png'> | <img src='/images/baltimore_household_income.png'> | <br>
            <img src='/images/baltimore_house_unit_vacancy_rate.png'> |  <img src='/images/Howard_County_Asian_map.png'>"
-collection: portfolio
+collection: Portfolio
 ---
 
 ## Project Name: 

@@ -1,6 +1,6 @@
 ---
 title: "Chicago Crime Analysis and Prediction"
-excerpt: "<br/><img src='/images/Chicago_Crime_Analysis.png'> | "      
+excerpt: "<br/><img src='/images/Chicago_Crime_Analysis.png'> "      
 collection: Portfolio
 ---
 

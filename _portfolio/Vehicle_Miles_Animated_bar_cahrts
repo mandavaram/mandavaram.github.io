@@ -1,1 +1,26 @@
+# animated_bar_charts_in_R
+
+The goal of this project is to explain how to build Animated Bar Charts in R
+
+
+### Final Output (GIF):
+
+![GIF](gganim_miles.gif)
+
+### Codes
+
++ `animated_bar_plot_in_R.R` - Building Animated Bar Plots 
+
+
+### Reproducibility 
+
+**Packages used**:
+
++ `gganimate`
++ `tidyverse`
+
+
+### Data Source:
+
+The origin input data (`csv`) has been downloaded from [opendata.maryland.gov/Transportation](https://opendata.maryland.gov/Transportation/Maryland-Annual-Vehicle-Miles-of-Travel/exua-btti/about_data)
 

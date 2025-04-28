@@ -65,11 +65,20 @@ redirect_from:
 | - | - | - |
 |**State Highway Administration, Baltimore, MD**|**Sr. Software Developer** |**April’12 to Current**|  
 
-**Project# 1: Maryland Statewide Vehicle Crashes & Fatality Analysis**: Analysis of Maryland Statewide vehicle crashes and build a spatial dataset using the data sources approved crash reports. Analysis relating to vehicle crashes (Fatal, Injury & Property damage), and forecasting on how to avoid further crashes is provided in addition to Vehicle Crash Report comparison charts.
+**Project# 1: Maryland Statewide Vehicle Crashes & Fatality Analysis**: Analysis of Maryland Statewide vehicle crashes and building a spatial dataset using the data sources approved crash reports. Analysis relating to vehicle crashes (Fatal, Injury & Property damage), and forecasting on how to avoid further crashes is provided in addition to Vehicle Crash Report comparison charts.
+
+**Project# 2: GDB File Metadata Extraction Workflows with Python**: This project involved creating a comprehensive Python-based solution to extract metadata from ESRI File Geodatabases (GDB), encompassing both vector (feature classes) and raster datasets, and organizing the extracted information into structured Word documents. The objective was to automate metadata extraction and streamline documentation for GIS datasets, enhancing data transparency, minimizing manual effort, and ensuring consistency in reporting.
 
 **Environment:** ArcGIS Pro and Python Scripts
 
-**Project# 2: Relative housing costs by Census tract, Frederick County, Maryland**: Analysis of housing costs focusing on renters and homeowners in Frederick County, Maryland, looking at U.S. census data at the census tract level. The analysis utilizes U.S. census data at the census tract level, which is a larger geographic unit compared to census block groups and blocks. To gauge housing costs, the study considers two measures: median gross rent as a percentage of household income for renters and median selected housing costs as a percentage of household income for homeowners.
+**Responsibilities:**
+- Designed and developed Python scripts using arcpy, osgeo.gdal, fiona, and docx to extract and document spatial metadata from GDB files.
+- Automated Word report generation with structured tables and sections for feature classes and raster datasets.
+- Built modular, reusable code supporting batch processing with integrated logging, error handling, and progress tracking.
+- Collaborated with GIS teams to define reporting standards, validate metadata quality, and customize output templates.
+- Documented workflows and user guides to support script maintainability, scalability, and production deployment.
+
+**Project# 3: Relative housing costs by Census tract, Frederick County, Maryland**: Analysis of housing costs focusing on renters and homeowners in Frederick County, Maryland, looking at U.S. census data at the census tract level. The analysis utilizes U.S. census data at the census tract level, which is a larger geographic unit compared to census block groups and blocks. To gauge housing costs, the study considers two measures: median gross rent as a percentage of household income for renters and median selected housing costs as a percentage of household income for homeowners.
 
 **Environment:** R Script & R Studio
 **R Packages:** sp, sf, ggplot2, rgdal, raster
@@ -83,9 +92,9 @@ redirect_from:
 - Worked closely with multidisciplinary teams to design GIS solutions, provided technical support, and contributed to large-scale geospatial projects.
 
   
-**Project# 3: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.
+**Project# 4: FITS**: **F**leet **I**nformation **T**racking **S**ystem: Tracks MDOT SHA’s fleet including, but not limited to, Heavy and Light equipment. The information tracked includes fuel card assignments, PIN Requests commute mileage tracking, maintenance scheduling, disposals, citations, and Emissions.
 
-**Project# 4: SIGS**: **State-Issued** **G**arment **S**ystem: This system is used to manage the ordering of uniforms, jackets, and boots for employees of the State Highway Administration.
+**Project# 5: SIGS**: **State-Issued** **G**arment **S**ystem: This system is used to manage the ordering of uniforms, jackets, and boots for employees of the State Highway Administration.
 
 **Responsibilities:**
 
@@ -103,11 +112,11 @@ redirect_from:
 - Involved in Database design & and writing Stored Procedures, Functions, Cursors, and T-SQL statements in Oracle.
 
 
-**Project# 5: CMS**: **C**ontract **M**anagement **S**ystem: This program allows the Office of Maintenance (OOM) to manage the contract initiation, evaluation, awarding, payment calculation processing, and reporting processes. CMS calculates the contract payment periodically.  The system enables the users to track and report the contractual process status and complete a trail of details while maintaining electronic documents.
+**Project# 6: CMS**: **C**ontract **M**anagement **S**ystem: This program allows the Office of Maintenance (OOM) to manage the contract initiation, evaluation, awarding, payment calculation processing, and reporting processes. CMS calculates the contract payment periodically.  The system enables the users to track and report the contractual process status and complete a trail of details while maintaining electronic documents.
 
-**Project# 6:** The **O**ffice of **R**eal **E**state **M**anagement **S**ystem (**OREMS**) is responsible for acquiring land related to Maryland State Highway Administration (SHA) projects. It also provides services to other real estate matters within the state of Maryland.
+**Project# 7:** The **O**ffice of **R**eal **E**state **M**anagement **S**ystem (**OREMS**) is responsible for acquiring land related to Maryland State Highway Administration (SHA) projects. It also provides services to other real estate matters within the state of Maryland.
 
-**Project# 7: CCTS**: **C**onsultant **C**ontract **T**racking **S**ystem is an enterprise Oracle-based application used SHA-wide to assist all Offices and Districts in tracking, managing, and reporting on A/E contract data including the tracking of MBE usage goals.
+**Project# 8: CCTS**: **C**onsultant **C**ontract **T**racking **S**ystem is an enterprise Oracle-based application used SHA-wide to assist all Offices and Districts in tracking, managing, and reporting on A/E contract data including the tracking of MBE usage goals.
 
 **Responsibilities:**
 

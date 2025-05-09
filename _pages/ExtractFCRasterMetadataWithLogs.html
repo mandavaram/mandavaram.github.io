@@ -1,0 +1,262 @@
+import arcpy  # ArcPy module for ArcGIS geoprocessing
+import os  # OS module for file and path operations
+import json  # JSON module for config file parsing
+import logging  # Logging module for creating logs
+import html  # HTML module for unescaping strings
+import re  # Regular expressions module
+import xml.etree.ElementTree as ET  # XML parsing
+from docx import Document  # For creating Word documents
+from docx.shared import Inches, Pt, RGBColor  # Shared objects for styling Word content
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT  # For aligning text in Word
+from docx.oxml import OxmlElement  # For inserting raw XML into Word
+from docx.oxml.ns import qn  # For handling Word namespace
+
+# Configure logging to file
+logging.basicConfig(filename='gdb_metadata_extraction.log',
+                    level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+def load_config(config_path):
+    """Load configuration settings from a JSON file."""
+    with open(config_path, 'r') as config_file:
+        return json.load(config_file)
+
+def add_page_number(section):
+    """Adds 'Page X of Y' to the footer of the given section."""
+    footer = section.footer
+    paragraph = footer.paragraphs[0]
+    paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    # Page number field
+    run = paragraph.add_run("Page ")
+    run.font.bold = False
+    
+    bold_run = paragraph.add_run()
+    bold_run.font.bold = True
+    fldChar1 = OxmlElement('w:fldChar')
+    fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText')
+    instrText.set(qn('xml:space'), 'preserve')
+    instrText.text = "PAGE"
+    fldChar2 = OxmlElement('w:fldChar')
+    fldChar2.set(qn('w:fldCharType'), 'separate')
+    fldChar3 = OxmlElement('w:fldChar')
+    fldChar3.set(qn('w:fldCharType'), 'end')
+    bold_run._r.append(fldChar1)
+    bold_run._r.append(instrText)
+    bold_run._r.append(fldChar2)
+    bold_run._r.append(fldChar3)
+
+    run.font.bold = False  # Ensure 'Page' text is not bold
+
+    # Add " of "
+    of_run = paragraph.add_run(" of ")
+    of_run.font.bold = False
+
+    # Total pages field
+    run2 = paragraph.add_run()
+    run2.font.bold = True  # Only the number is bold
+    fldChar1 = OxmlElement('w:fldChar')
+    fldChar1.set(qn('w:fldCharType'), 'begin')
+    instrText = OxmlElement('w:instrText')
+    instrText.set(qn('xml:space'), 'preserve')
+    instrText.text = "NUMPAGES"
+    fldChar2 = OxmlElement('w:fldChar')
+    fldChar2.set(qn('w:fldCharType'), 'separate')
+    fldChar3 = OxmlElement('w:fldChar')
+    fldChar3.set(qn('w:fldCharType'), 'end')
+    run2._r.append(fldChar1)
+    run2._r.append(instrText)
+    run2._r.append(fldChar2)
+    run2._r.append(fldChar3)
+
+def add_custom_header(section):
+    """Adds custom header text to the Word document."""
+    header = section.header
+    
+    # First line: small font, right-aligned
+    para1 = header.paragraphs[0]
+    para1.text = "GISHydroWeb Metadata Documentation"
+    para1.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+    run1 = para1.runs[0]
+    run1.font.size = Pt(10)
+
+def extract_item_metadata(item_path, item_type, is_last, doc, gdb_name):
+    """Extract metadata for a single feature class or raster."""
+    try:
+        desc = arcpy.Describe(item_path)
+        metadata = arcpy.metadata.Metadata(item_path)
+
+        # Extract extent and reproject to WGS84
+        extent = desc.extent
+        sr = desc.spatialReference
+        
+        # Define WGS 84
+        # The World Geodetic System 1984 (WGS 84) is a global, three-dimensional coordinate reference frame used for positioning, navigation, and mapping        
+        # The number 4326 is the Well-Known ID (WKID), a unique numerical identifier assigned to WGS84.
+        wgs84 = arcpy.SpatialReference(4326)
+        
+        # Create corner points and project
+        lower_left = arcpy.PointGeometry(arcpy.Point(extent.XMin, extent.YMin), sr).projectAs(wgs84)
+        upper_right = arcpy.PointGeometry(arcpy.Point(extent.XMax, extent.YMax), sr).projectAs(wgs84)
+        
+        extent_text = (
+            f"West: {lower_left.centroid.X}\n"
+            f"East: {upper_right.centroid.X}\n"
+            f"South: {lower_left.centroid.Y}\n"
+            f"North: {upper_right.centroid.Y}"
+        )
+
+        # Clean useLimit tag
+        metadata_xml = metadata.xml
+        
+        # Parse the XML string
+        tree = ET.ElementTree(ET.fromstring(metadata_xml))
+        root = tree.getroot()
+        
+        # Find the useLimit tag
+        use_limit_elem = root.find('.//dataIdInfo/resConst/Consts/useLimit')
+        if use_limit_elem is not None:
+            # The content is likely HTML-escaped, so unescape it first
+            raw_html = html.unescape(use_limit_elem.text)
+            
+            # Remove HTML-like tags using regex
+            clean_Use_Limitation = re.sub(r'<.*?>', '', raw_html).strip()
+        else:
+            clean_Use_Limitation = "No use limitation found."
+
+        # Clean description
+        if metadata.description:
+            desc_html = html.unescape(metadata.description)
+            clean_Description = re.sub(r'<.*?>', '', desc_html).strip()
+        else:
+            clean_Description = "Description not found."
+
+        # Find the scaleRange tag
+        scale_range = root.find('.//scaleRange')
+
+        # Find Scale Range (min and max) in the metadata
+        if scale_range is not None:
+            min_scale = scale_range.find('minScale')
+            max_scale = scale_range.find('maxScale')        
+        else:
+            min_scale = max_scale = "No scale range found."
+
+        scaleRange_text = (
+            f"Min Scale: {min_scale.text}\n"
+            f"Max Scale: {max_scale.text}"
+        )
+        
+        # Prepare document heading
+        heading = doc.add_heading(f'GISHydroWeb Metadata Report for {gdb_name}', level=0)
+        heading.runs[0].font.size = Pt(20)
+        heading.runs[0].font.bold = True
+        heading.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+
+        # Setup metadata table
+        # Create a table with 2 columns
+        table = doc.add_table(rows=0, cols=2)
+        
+        # Set column widths
+        table.columns[0].width = Inches(1.75)  # Metadata property
+        table.columns[1].width = Inches(8.25)  # Metadata value
+
+        # Function to add a row
+        def add_row(prop, value):
+            row_cells = table.add_row().cells
+            
+            # Clear and re-add bold property name
+            row_cells[0].text = ""  # Clear existing default text
+            para = row_cells[0].paragraphs[0]
+            run = para.add_run(prop)
+            run.bold = True
+            run.font.size = Pt(10)  # Set font size
+            
+            # Set value normally, with font size
+            row_cells[1].text = value if value else "Not Available"  # Property value
+            for paragraph in row_cells[1].paragraphs:
+                for run in paragraph.runs:
+                    run.font.size = Pt(10)
+
+        # Add rows
+        add_row("Title:", metadata.title)
+        add_row("Type:", desc.dataType)
+        add_row("Tags:", metadata.tags)
+        add_row("Summary:", metadata.summary)
+        add_row("Description:", clean_Description)
+        add_row("Credits:", metadata.credits)
+        add_row("Use Limitations:", clean_Use_Limitation)
+        #add_row("Scale Range:", scaleRange_text)          
+        #add_row("Extent:", extent_text if extent_text else "Extent not Available")
+        
+        # Add page break if not last item
+        if not is_last:
+            doc.add_page_break()
+
+        logging.info(f"Successfully extracted metadata for: {item_path}")
+        
+    except Exception as e:
+        logging.error(f"Failed to process {item_path}: {e}")
+
+def extract_metadata_to_word(gdb_path, output_folder):
+    """Main method to extract metadata from all items in GDB and save as Word document."""
+    try:
+        # Extract GDB name from the given path
+        gdb_name = os.path.basename(os.path.normpath(gdb_path)).replace(".gdb", "")
+        output_docx = os.path.join(output_folder, f"{gdb_name}_Metadata.docx")
+        
+        # Create a new Word document
+        doc = Document()
+        
+        # Add page number to footer of the first section
+        add_page_number(doc.sections[0])
+        add_custom_header(doc.sections[0])
+        
+        # Set workspace to the input GDB
+        arcpy.env.workspace = gdb_path
+        
+        # Read Feature Classes
+        feature_classes = arcpy.ListFeatureClasses()
+        
+        # Read Raster Datasets
+        rasters = arcpy.ListRasters()
+        
+        all_items = [(os.path.join(gdb_path, fc), "Feature Class") for fc in feature_classes] + \
+                    [(os.path.join(gdb_path, r), "Raster") for r in rasters]
+
+        for i, (path, item_type) in enumerate(all_items):
+            is_last = (i == len(all_items) - 1)
+            extract_item_metadata(path, item_type, is_last, doc, gdb_name)
+
+        # Ensure output folder exists
+        os.makedirs(output_folder, exist_ok=True)
+        
+        # Save the Word document dynamically
+        doc.save(output_docx)
+        
+        logging.info(f"Metadata extraction is complete for the GDB file: {gdb_name} with {len(feature_classes)} Feature classes and {len(rasters)} Rasters. Saved to {output_docx}")
+        
+    except Exception as e:
+        logging.error(f"Failed to extract metadata from GDB: {gdb_path} - {e}")
+
+if __name__ == "__main__":
+    
+    try:
+        # Load configuration
+        config = load_config("config.json")
+
+        # Extract parameters from config
+        gdb_folder = config.get("gdb_folder")    
+        
+        # Search for GDB files in the folder
+        gdb_files = [os.path.join(gdb_folder, f) for f in os.listdir(gdb_folder) if f.endswith(".gdb")]
+
+        if not gdb_files:
+            logging.warning("No GDB files found in the specified folder.")
+        else:
+            for gdb_path in gdb_files:
+                output_folder = os.path.join(gdb_folder, "Metadata_Documentation")
+                extract_metadata_to_word(gdb_path, output_folder)
+    
+    except Exception as e:
+        logging.critical(f"Unexpected error occurred: {e}")

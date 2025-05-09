@@ -8,7 +8,7 @@ author_profile: true
 
 {% include base_path %}
 -----------------------------------
-Welcome to my GIS portfolio. Below you can browse examples of my work compiled over the past two years.
+Welcome to my GIS portfolio. Below, you can browse examples of my work compiled over the past 4+ years.
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}

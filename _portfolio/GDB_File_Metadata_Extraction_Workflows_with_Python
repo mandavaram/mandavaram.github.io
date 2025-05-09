@@ -1,15 +1,18 @@
 ---
 title: "GDB File Metadata Extraction Workflows with Python"
-excerpt: ""      
+excerpt: "<br/><img src=''>"      
 collection: Portfolio
 ---
+
 
 ## Project Name: 
 GDB File Metadata Extraction Workflows with Python
 
+
 ## Introduction: 
 This project involved creating a comprehensive Python-based solution to extract metadata from ESRI File Geodatabases (GDB), encompassing both vector (feature classes) and raster datasets, and organizing the extracted information into structured Word documents. 
 The objective was to automate metadata extraction and streamline documentation for GIS datasets, enhancing data transparency, minimizing manual effort, and ensuring consistency in reporting.
+
 
 
 ## Responsibilities: 

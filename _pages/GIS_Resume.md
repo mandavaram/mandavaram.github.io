@@ -64,6 +64,7 @@ redirect_from:
 |**Client** |**Role** |**Duration**|  
 | - | - | - |
 |**State Highway Administration, Baltimore, MD**|**Sr. Software Developer** |**April’12 to Current**|  
+|**Synergy Systems & Services, Inc**|**Sr. Software Developer** |**April’12 to Current**|
 
 **Project# 1: Maryland Statewide Vehicle Crashes & Fatality Analysis**: Analysis of Maryland Statewide vehicle crashes and building a spatial dataset using the data sources approved crash reports. Analysis relating to vehicle crashes (Fatal, Injury & Property damage), and forecasting on how to avoid further crashes is provided in addition to Vehicle Crash Report comparison charts.
 

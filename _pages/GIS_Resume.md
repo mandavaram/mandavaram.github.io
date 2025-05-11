@@ -61,7 +61,7 @@ redirect_from:
 
 **Professional Experience:**
 
-|**Client** |**Role** |**Duration**|  
+|**Client & Employer** |**Role** |**Duration**|  
 | - | - | - |
 |**State Highway Administration, Baltimore, MD**|**Sr. Software Developer** |**April’12 to Current**|  
 |**Synergy Systems & Services, Inc**|**Sr. Software Developer** |**April’12 to Current**|

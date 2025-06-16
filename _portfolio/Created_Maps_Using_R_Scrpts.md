@@ -27,6 +27,8 @@ Baltimore City and Howard County data analysis maps
 
 ## <a href="/_pages/BaltimoreCityPopulationMap.html">Project source code with instructions for baltimore_white_pop_percent</a>
 
+## <a href="/_pages/US_Household_income_map.html">Project source code with instructions for US_Household_income_map</a>
+
 
 ## Environment: 
 R Scripts

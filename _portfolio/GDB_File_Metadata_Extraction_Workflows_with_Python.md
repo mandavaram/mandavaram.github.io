@@ -1,6 +1,6 @@
 ---
 title: "GDB File Metadata Extraction Workflows with Python"
-excerpt: "<br/><img src=''>"      
+excerpt: "<br/><img src='/images/MetadataExtractionProcess.png'>"      
 collection: Portfolio
 ---
 

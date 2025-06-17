@@ -14,4 +14,4 @@ crashes, is provided in addition to Vehicle Crash Report comparison charts.
 
 ## Dashboard ArcGIS Online URL:
 
- - Dashboard ArcGIS Onlnie: <a href="[https://sss-inc.maps.arcgis.com/apps/dashboards/0d9e80bf3570491fb2a8b1ccaceada1f](https://sss-inc.maps.arcgis.com/apps/dashboards/0d9e80bf3570491fb2a8b1ccaceada1f)">URL</a>
+ - Dashboard ArcGIS Onlnie: <a href="https://sss-inc.maps.arcgis.com/apps/dashboards/0d9e80bf3570491fb2a8b1ccaceada1f">URL</a>
